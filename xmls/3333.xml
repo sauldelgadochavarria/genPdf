@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<cfdi:Comprobante Version="4.0" Serie="AB" Folio="102" Fecha="2022-05-03T09:00:16" Sello="Awo3T4RUbi90Vv+wvPzEIve4mlo1L4FCKn84/IorL5+FftFEjXbAsaMHQ/VOApnfwqhluOuj6g0vkzYs2RBf6U0hX2rqc3bv4q30YnyRzdtnmXSnA2KuCCB9kERmTgTJL5WGrh5VcgPkkg2YS70LS+sVrgXaai+odOhe8+rdL213OUq0y9ajcMyEG7qjp0Kn7gChuGX8WsuE7j9L6wKL86DB64suspZjLuYuyb5a1FEvOuF/YkvVrEnowB4SvJDUxEYwiQ5CL8/Aa/yFw5Wr07SUHvtENr+G1bJ30XskN1tg5012+zzrVqyH58e8ainVVZ896yLb3TDR3MjblpJPbA==" FormaPago="01" NoCertificado="30001000000400002434" Certificado="MIIFuzCCA6OgAwIBAgIUMzAwMDEwMDAwMDA0MDAwMDI0MzQwDQYJKoZIhvcNAQELBQAwggErMQ8wDQYDVQQDDAZBQyBVQVQxLjAsBgNVBAoMJVNFUlZJQ0lPIERFIEFETUlOSVNUUkFDSU9OIFRSSUJVVEFSSUExGjAYBgNVBAsMEVNBVC1JRVMgQXV0aG9yaXR5MSgwJgYJKoZIhvcNAQkBFhlvc2Nhci5tYXJ0aW5lekBzYXQuZ29iLm14MR0wGwYDVQQJDBQzcmEgY2VycmFkYSBkZSBjYWRpejEOMAwGA1UEEQwFMDYzNzAxCzAJBgNVBAYTAk1YMRkwFwYDVQQIDBBDSVVEQUQgREUgTUVYSUNPMREwDwYDVQQHDAhDT1lPQUNBTjERMA8GA1UELRMIMi41LjQuNDUxJTAjBgkqhkiG9w0BCQITFnJlc3BvbnNhYmxlOiBBQ0RNQS1TQVQwHhcNMTkwNjE3MTk0NDE0WhcNMjMwNjE3MTk0NDE0WjCB4jEnMCUGA1UEAxMeRVNDVUVMQSBLRU1QRVIgVVJHQVRFIFNBIERFIENWMScwJQYDVQQpEx5FU0NVRUxBIEtFTVBFUiBVUkdBVEUgU0EgREUgQ1YxJzAlBgNVBAoTHkVTQ1VFTEEgS0VNUEVSIFVSR0FURSBTQSBERSBDVjElMCMGA1UELRMcRUtVOTAwMzE3M0M5IC8gWElRQjg5MTExNlFFNDEeMBwGA1UEBRMVIC8gWElRQjg5MTExNk1HUk1aUjA1MR4wHAYDVQQLExVFc2N1ZWxhIEtlbXBlciBVcmdhdGUwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQCN0peKpgfOL75iYRv1fqq+oVYsLPVUR/GibYmGKc9InHFy5lYF6OTYjnIIvmkOdRobbGlCUxORX/tLsl8Ya9gm6Yo7hHnODRBIDup3GISFzB/96R9K/MzYQOcscMIoBDARaycnLvy7FlMvO7/rlVnsSARxZRO8Kz8Zkksj2zpeYpjZIya/369+oGqQk1cTRkHo59JvJ4Tfbk/3iIyf4H/Ini9nBe9cYWo0MnKob7DDt/vsdi5tA8mMtA953LapNyCZIDCRQQlUGNgDqY9/8F5mUvVgkcczsIgGdvf9vMQPSf3jjCiKj7j6ucxl1+FwJWmbvgNmiaUR/0q4m2rm78lFAgMBAAGjHTAbMAwGA1UdEwEB/wQCMAAwCwYDVR0PBAQDAgbAMA0GCSqGSIb3DQEBCwUAA4ICAQBcpj1TjT4jiinIujIdAlFzE6kRwYJCnDG08zSp4kSnShjxADGEXH2chehKMV0FY7c4njA5eDGdA/G2OCTPvF5rpeCZP5Dw504RZkYDl2suRz+wa1sNBVpbnBJEK0fQcN3IftBwsgNFdFhUtCyw3lus1SSJbPxjLHS6FcZZ51YSeIfcNXOAuTqdimusaXq15GrSrCOkM6n2jfj2sMJYM2HXaXJ6rGTEgYmhYdwxWtil6RfZB+fGQ/H9I9WLnl4KTZUS6C9+NLHh4FPDhSk19fpS2S/56aqgFoGAkXAYt9Fy5ECaPcULIfJ1DEbsXKyRdCv3JY89+0MNkOdaDnsemS2o5Gl08zI4iYtt3L40gAZ60NPh31kVLnYNsmvfNxYyKp+AeJtDHyW9w7ftM0Hoi+BuRmcAQSKFV3pk8j51la+jrRBrAUv8blbRcQ5BiZUwJzHFEKIwTsRGoRyEx96sNnB03n6GTwjIGz92SmLdNl95r9rkvp+2m4S6q1lPuXaFg7DGBrXWC8iyqeWE2iobdwIIuXPTMVqQb12m1dAkJVRO5NdHnP/MpqOvOgLqoZBNHGyBg4Gqm4sCJHCxA1c8Elfa2RQTCk0tAzllL4vOnI1GHkGJn65xokGsaU4B4D36xh7eWrfj4/pgWHmtoDAYa8wzSwo2GVCZOs+mtEgOQB91/g==" SubTotal="100.00" Moneda="MXN" TipoCambio="1" Total="116.00" TipoDeComprobante="I" Exportacion="01" MetodoPago="PUE" LugarExpedicion="26015"
+    xmlns:cfdi="http://www.sat.gob.mx/cfd/4" xsi:schemaLocation="http://www.sat.gob.mx/cfd/4 http://www.sat.gob.mx/sitio_internet/cfd/4/cfdv40.xsd"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <cfdi:Emisor Rfc="EKU9003173C9" Nombre="ESCUELA KEMPER URGATE" RegimenFiscal="601" />
+    <cfdi:Receptor Rfc="SSF1103037F1" Nombre="SCAFANDRA SOFTWARE FACTORY," DomicilioFiscalReceptor="06470" RegimenFiscalReceptor="601" UsoCFDI="G03" />
+    <cfdi:Conceptos>
+        <cfdi:Concepto ClaveProdServ="84111506" Cantidad="1.00" ClaveUnidad="E48" Unidad="Servicio" Descripcion="Timbres de Facturacion" ValorUnitario="100.00" Importe="100.00" ObjetoImp="02">
+            <cfdi:Impuestos>
+                <cfdi:Traslados>
+                    <cfdi:Traslado Base="100.00" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="16.00" />
+                </cfdi:Traslados>
+            </cfdi:Impuestos>
+        </cfdi:Concepto>
+		        <cfdi:Concepto ClaveProdServ="84111506" Cantidad="1.00" ClaveUnidad="E48" Unidad="Servicio" Descripcion="Timbres de Facturacion" ValorUnitario="100.00" Importe="100.00" ObjetoImp="02">
+            <cfdi:Impuestos>
+                <cfdi:Traslados>
+                    <cfdi:Traslado Base="100.00" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="16.00" />
+                </cfdi:Traslados>
+            </cfdi:Impuestos>
+        </cfdi:Concepto>
+    </cfdi:Conceptos>
+    <cfdi:Impuestos TotalImpuestosTrasladados="16.00">
+        <cfdi:Traslados>
+            <cfdi:Traslado Base="100.00" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="16.00" />
+        </cfdi:Traslados>
+    </cfdi:Impuestos>
+    <cfdi:Complemento>
+        <tfd:TimbreFiscalDigital xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sat.gob.mx/TimbreFiscalDigital http://www.sat.gob.mx/sitio_internet/cfd/TimbreFiscalDigital/TimbreFiscalDigitalv11.xsd" Version="1.1" UUID="B334B789-C406-4EF1-BB27-5688304F796A" FechaTimbrado="2022-05-04T11:44:05" RfcProvCertif="SPR190613I52" SelloCFD="Awo3T4RUbi90Vv+wvPzEIve4mlo1L4FCKn84/IorL5+FftFEjXbAsaMHQ/VOApnfwqhluOuj6g0vkzYs2RBf6U0hX2rqc3bv4q30YnyRzdtnmXSnA2KuCCB9kERmTgTJL5WGrh5VcgPkkg2YS70LS+sVrgXaai+odOhe8+rdL213OUq0y9ajcMyEG7qjp0Kn7gChuGX8WsuE7j9L6wKL86DB64suspZjLuYuyb5a1FEvOuF/YkvVrEnowB4SvJDUxEYwiQ5CL8/Aa/yFw5Wr07SUHvtENr+G1bJ30XskN1tg5012+zzrVqyH58e8ainVVZ896yLb3TDR3MjblpJPbA==" NoCertificadoSAT="30001000000400002495" SelloSAT="h18SIVAPxFYvwet3O8lqJqoQ5x6dL/FTAjCmArLs0FbRTN2aq2L/Kox0eIuVxiEsXjZyzubnzlICcVxyEXZqA1uCsgnDGfeyGhe112QeHX4dalsmfVUCuVc9Btz1YSXYdGtdkfBNNRWRj1UGmDpNVh70wn9xNVSIJ4KUN1CfLpmcYNcZbrYhB3meuzhSaS1NPivU6bldnFfhjfT6oU+QQoA4/etL4BfpQusjAQXn/QryLwXus5a1DlL8s9RHOyWEi5HsCOg+sbCrJRbsUaZxi7ib93VF8nXRXYMCjZPwV2pVKlYcZmw5XR4Ky/5wdaJXs+jENIVfnO4meP/3TQ4o9A=="
+            xmlns:tfd="http://www.sat.gob.mx/TimbreFiscalDigital" />
+    </cfdi:Complemento>
+</cfdi:Comprobante>
+            

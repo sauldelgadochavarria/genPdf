@@ -1,0 +1,3108 @@
+I try get array of pago20:DoctoRelacionado using const { DoctoRelacionado
+} = xmlObj['cfdi:Complemento'
+]['pago20:Pagos'
+]['pago20:Pago'
+] and return me undefined
+  <cfdi:Complemento>
+  <pago20:Pagos Version="2.0">
+    <pago20:Totales MontoTotalPagos="2306841.60" TotalRetencionesIVA="82387.20" TotalTrasladosBaseIVA16="2059680.00" TotalTrasladosImpuestoIVA16="329548.80"/>
+    <pago20:Pago CtaBeneficiario="0000993435" FechaPago="2024-01-30T12:00:00" FormaDePagoP="03" MonedaP="MXN" Monto="2306841.60" RfcEmisorCtaBen="BXXA830831LJ2" TipoCambioP="1">
+            <pago20:DoctoRelacionado EquivalenciaDR="1" Folio="17773" IdDocumento="65B03938-85A8-49C7-841B-79BABF89F10F" ImpPagado="23296.00" ImpSaldoAnt="23296.00" ImpSaldoInsoluto="0.00" MonedaDR="MXN" NumParcialidad="1" ObjetoImpDR="02" Serie="CFCP">
+                <pago20:ImpuestosDR>
+                  <pago20:RetencionesDR>
+                      <pago20:RetencionDR BaseDR="20800.000000" ImporteDR="832.000000" ImpuestoDR="002" TasaOCuotaDR="0.040000" TipoFactorDR="Tasa"/>
+                  </pago20:RetencionesDR>
+                  <pago20:TrasladosDR>
+                    <pago20:TrasladoDR BaseDR="20800.000000" ImporteDR="3328.000000" ImpuestoDR="002" TasaOCuotaDR="0.160000" TipoFactorDR="Tasa"/>
+                  </pago20:TrasladosDR>
+                </pago20:ImpuestosDR>
+            </pago20:DoctoRelacionado>
+            <pago20:DoctoRelacionado EquivalenciaDR="1" Folio="17774" IdDocumento="65B03938-85A8-49C7-841B-78BABF89F10F" ImpPagado="23296.00" ImpSaldoAnt="23296.00" ImpSaldoInsoluto="0.00" MonedaDR="MXN" NumParcialidad="1" ObjetoImpDR="02" Serie="CFCP">
+              <pago20:ImpuestosDR>
+                <pago20:RetencionesDR>
+                    <pago20:RetencionDR BaseDR="20800.000000" ImporteDR="832.000000" ImpuestoDR="002" TasaOCuotaDR="0.040000" TipoFactorDR="Tasa"/>
+                </pago20:RetencionesDR>
+                <pago20:TrasladosDR>
+                  <pago20:TrasladoDR BaseDR="20800.000000" ImporteDR="3328.000000" ImpuestoDR="002" TasaOCuotaDR="0.160000" TipoFactorDR="Tasa"/>
+                </pago20:TrasladosDR>
+              </pago20:ImpuestosDR>
+        </pago20:DoctoRelacionado>
+
+
+En PDFKit, las unidades se definen en "puntos", donde 
+72 puntos equivalen a una pulgada. 
+
+Por lo tanto, en este caso, el texto "Regimen Fiscal: 601" se colocará a 0.694 pulgadas (50 / 72) del borde izquierdo y 1.111 pulgadas (80 / 72) del borde superior del PDF.
+
+crear una funcion en javascript que reciba como parametro margenizquierdo, margenderecho, numerocolumnas, columnaActual y que regrese la posicion horizontal de la columna de una hoja tamaño carta
+la cual se divide en 72 puntos por pulgada, que divida entre el numero de columas de  menos los margenes izquierdo y derecho y regrese la posicion de la columna columnaActual
+
+
+
+en un texto horizontal, de tamaño de fuente 7, crea una funcion que reciba como parametros posicioninicial, texto regrese la posicion final en una hoja tamaño carta que se divide en 72 puntos por pulgada
+
+
+
+convert this array to jsonarray
+['50161815', 'ADAMS TRIDENT MENTA 4', 'H87', '2.00', '$2.59', '$0.00', '$5.18'
+],
+['50161815', 'ADAMS TRIDENT MENTA 4', 'H87', '4.00', '$2.59', '$0.00', '$10.36'
+],
+['51101557', 'ALMUS DOXICICLINA 100 MG 28 CAP', 'H87', '1.00', '$214.70', '$0.00', '$214.70'
+]
+
+whit this properties claveProdServ, concepto, claveUnidad, cantidad, precioUnitario, descuento, importe
+var fecha=complemnto.Comprobante.feFechacha
+
+complemento ={
+  "_id": "5951AB7A-CB73-4F7B-8416-4519A77BA780",
+  "Comprobante": {
+    "xmlnscfdi": "http://www.sat.gob.mx/cfd/3",
+    "Certificado": "MIIF7TCCA9WgAwIBAgIUMDAwMDEwMDAwMDA1MDU2NDgwNzQwDQYJKoZIhvcNAQELBQAwggGEMSAwHgYDVQQDDBdBVVRPUklEQUQgQ0VSVElGSUNBRE9SQTEuMCwGA1UECgwlU0VSVklDSU8gREUgQURNSU5JU1RSQUNJT04gVFJJQlVUQVJJQTEaMBgGA1UECwwRU0FULUlFUyBBdXRob3JpdHkxKjAoBgkqhkiG9w0BCQEWG2NvbnRhY3RvLnRlY25pY29Ac2F0LmdvYi5teDEmMCQGA1UECQwdQVYuIEhJREFMR08gNzcsIENPTC4gR1VFUlJFUk8xDjAMBgNVBBEMBTA2MzAwMQswCQYDVQQGEwJNWDEZMBcGA1UECAwQQ0lVREFEIERFIE1FWElDTzETMBEGA1UEBwwKQ1VBVUhURU1PQzEVMBMGA1UELRMMU0FUOTcwNzAxTk4zMVwwWgYJKoZIhvcNAQkCE01yZXNwb25zYWJsZTogQURNSU5JU1RSQUNJT04gQ0VOVFJBTCBERSBTRVJWSUNJT1MgVFJJQlVUQVJJT1MgQUwgQ09OVFJJQlVZRU5URTAeFw0yMDExMDkyMDQwMDJaFw0yNDExMDkyMDQwMDJaMIG7MR8wHQYDVQQDExZBQ0VST1MgRkVSQ09NIFNBIERFIENWMR8wHQYDVQQpExZBQ0VST1MgRkVSQ09NIFNBIERFIENWMR8wHQYDVQQKExZBQ0VST1MgRkVSQ09NIFNBIERFIENWMSUwIwYDVQQtExxBRlI4NzA3MjRHVTEgLyBBVVBSODMxMjI3SUNBMR4wHAYDVQQFExUgLyBBVVBSODMxMjI3SE5MR1hEMDExDzANBgNVBAsTBk1BVFJJWjCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBAKsya47gPpwCLN4eRT6HiWKFn8q86WzFoPizDPiEOeU3nUz85tZ7g/KhMoGqNVExiGjnd7k/u7bFFfnDezHX2a66+mGL5IqpkbfyyBO+0CqVqBH7/Lf7mt7HjB9vnyjxrLcD4EoW7pxSnnJ+D+G91jXYaTHCq3oQoRFgpsFgHKHoUDnZPum900ZeNjZXg7Eel/i8ZzmVAxe3TO9sAZdX1v6kf0GNOpT8sQa/NhTAMLWVXbwqCdS5VS5hfP/WYc6lDa1AgwtaHdhhvKZffmF9+VMO9dYUBhAKp7OefEJl+9vkxrxZaLo3MBZWZgvDvTmwWtXv7CTyfPR2kGejYCNj52UCAwEAAaMdMBswDAYDVR0TAQH/BAIwADALBgNVHQ8EBAMCBsAwDQYJKoZIhvcNAQELBQADggIBALhogjYCoizPKIEM/f8OadEymKQu59XFEQws/uJZ/QOg36emhm7hemm5QpW6iFzuURVBIecGtVluVu9UfyLaVCvMya4bFxUKWAQorDU6Qi8aKwFZoJHOuV/vcvuY2XxdAca9zU27D0xRIgnNFlBo1AXMais2HVO/HYVfg0ieT1eTgJj4e0To8zHUZYyD7znSBGqCAUuamf/xlMwy+czsOno9WU+UPtUvWRjQcQ25w1ebRr6lrtb9FjcA00QtTxIUp9N0VWm+IsffFTgGry1JGJ8Jppnei6AkwA8kG3qSChgkhmLDZOlBIHR1QTZxTJfcRSiV1NY3Bez/IYn3U9YoD5L4maeZeLlSVUMx4nb0OqEyf271SsRJ5769t2X2FMuC93ywSqa1u89Msw4LtgzA9C1bj97XvF3SBmrHwn8GqBVDD09XqP7cigasMrdArjYdaHh2k9gaNCTrH+lxKds4AjT1hvFPuNk3tOD7eGEUWUrnyDMhny9zL8KP/cP+3zkoSAIAUJt1DUr7BZsTf/CwMMINztEkIfGzOfzIvwKm76eUw8OT9O2a4MgFD33CKzSt6sihaOAesXHi7P82l9p2+EHCFQBDerYofIYd0MR8EvbKATRelIRChxc0MtFaQ0Nghp8BqbW3wo5G9gohDwJO35re9Btf8Ptch4TEaEIpqRch",
+    "CondicionesDePago": "CONTADO",
+    "Fecha": {
+      "$date": "2022-09-16T14:38:15.000Z"
+    },
+    "Folio": "43293",
+    "FormaPago": "99",
+    "LugarExpedicion": "66376",
+    "MetodoPago": "PPD",
+    "Moneda": "MXN",
+    "NoCertificado": "00001000000505648074",
+    "Sello": "l3Vju48U5+I02FlcnijyVsECwqfsWpl6hyTmWUJs9M0eqNvsbj9lkDm6wzaGIN2jrCfteRCC5rz88Egu8Imzxz4IYkcGgrop2X03AOOg4EgQbJRhGbUjmge0zHCPCafNbu8DbLenTEViy3jw/EXqoZkYAZPiumjusYQyimzR2S4U1zK3yd2lXrCSsix4KYQU/541aPE1tD2nk6wX6boP+JPYVmtNM/xv/bgnO7YCoy8lXldsKUTEcvKicraT66j9lpsF/xuNxRvUdzndSgLx6mqRkS8XHIyUagsPH1fWKmVLnipUpi5I6Mq56rrCAmjHpdhTaCTY0vlVi7zbDEzwwg==",
+    "Serie": "A",
+    "SubTotal": 43400,
+    "TipoDeComprobante": "I",
+    "Total": 50344,
+    "Version": "3.3",
+    "xsischemaLocation": "http://www.sat.gob.mx/cfd/3 http://www.sat.gob.mx/sitio_internet/cfd/3/cfdv33.xsd",
+    "Emisor": {
+      "Rfc": "AFR870724GU1",
+      "Nombre": "ACEROS FERCOM SA DE CV",
+      "RegimenFiscal": "601"
+    },
+    "Receptor": {
+      "Rfc": "RIM050601BD1",
+      "Nombre": "RECONSTRUCTORA INDUSTRIAL MANUFACTURERA MONTERREY S.A. C.V."
+    },
+    "Archivo": "5951AB7A-CB73-4F7B-8416-4519A77BA780@1000000000XX0.xml",
+    "Estatus": "vigente",
+    "Conceptos": [
+      {
+        "Concepto": [
+          {
+            "Cantidad": "1.0000",
+            "ClaveProdServ": "30102204",
+            "ClaveUnidad": "H87",
+            "Descripcion": "PLACA A-516 GRADO 70 DE 3/8\" PZA\n01 PZ: 3/8\" x 48\" x 120\"\r\nASME-SA-516-70",
+            "Importe": "14400.00",
+            "NoIdentificacion": "A516-70 3/8 PZA",
+            "Unidad": "PZA",
+            "ValorUnitario": "14400.0000",
+            "cfdiImpuestos": {
+              "cfdiTraslados": {
+                "cfdiTraslado": {
+                  "Base": "14400.00",
+                  "Importe": "2304.00",
+                  "Impuesto": "002",
+                  "TasaOCuota": "0.160000",
+                  "TipoFactor": "Tasa"
+                }
+              }
+            },
+            "cfdi:Parte": {
+              "Cantidad": "281.0000",
+              "ClaveProdServ": "30102204",
+              "Descripcion": "PLACA A-516 GRADO 70 DE 3/8\"",
+              "NoIdentificacion": "NA516-70 3/8"
+            }
+          },
+          {
+            "Cantidad": "1.0000",
+            "ClaveProdServ": "30102204",
+            "ClaveUnidad": "H87",
+            "Descripcion": "PLACA A-516 GRADO 70 DE 3/4\" PZA\n01 PZ: 3/4\" x 48\" x 120\"\r\nASME-SA-516-70.",
+            "Importe": "29000.00",
+            "NoIdentificacion": "A516-70 3/4 PZA",
+            "Unidad": "PZA",
+            "ValorUnitario": "29000.0000",
+            "cfdiImpuestos": {
+              "cfdiTraslados": {
+                "cfdiTraslado": {
+                  "Base": "29000.00",
+                  "Importe": "4640.00",
+                  "Impuesto": "002",
+                  "TasaOCuota": "0.160000",
+                  "TipoFactor": "Tasa"
+                }
+              }
+            },
+            "cfdi:Parte": {
+              "Cantidad": "562.0000",
+              "ClaveProdServ": "30102204",
+              "Descripcion": "PLACA A-516 GRADO 70 DE 3/4\"",
+              "NoIdentificacion": "NA516-70 3/4",
+              "Unidad": "KG"
+            }
+          }
+        ]
+      }
+    ],
+    "cfdiImpuestos": {
+      "TotalImpuestosTrasladados": 6944,
+      "cfdiTraslados": {
+        "cfdiTraslado": {
+          "Importe": 6944,
+          "Impuesto": "002",
+          "TasaOCuota": "0.160000",
+          "TipoFactor": "Tasa"
+        }
+      }
+    },
+    "Complemento": {
+      "TimbreFiscalDigital": {
+        "xsischemaLocation": "http://www.sat.gob.mx/TimbreFiscalDigital http://www.sat.gob.mx/sitio_internet/cfd/TimbreFiscalDigital/TimbreFiscalDigitalv11.xsd",
+        "UUID": "5951AB7A-CB73-4F7B-8416-4519A77BA780",
+        "FechaTimbrado": {
+          "$date": "2022-09-16T14:38:20.000Z"
+        },
+        "selloCFD": "l3Vju48U5+I02FlcnijyVsECwqfsWpl6hyTmWUJs9M0eqNvsbj9lkDm6wzaGIN2jrCfteRCC5rz88Egu8Imzxz4IYkcGgrop2X03AOOg4EgQbJRhGbUjmge0zHCPCafNbu8DbLenTEViy3jw/EXqoZkYAZPiumjusYQyimzR2S4U1zK3yd2lXrCSsix4KYQU/541aPE1tD2nk6wX6boP+JPYVmtNM/xv/bgnO7YCoy8lXldsKUTEcvKicraT66j9lpsF/xuNxRvUdzndSgLx6mqRkS8XHIyUagsPH1fWKmVLnipUpi5I6Mq56rrCAmjHpdhTaCTY0vlVi7zbDEzwwg==",
+        "noCertificadoSAT": "00001000000505142236",
+        "selloSAT": "c8QicWLKA4TdDAZiTVMuVzoYyojLyKz3i5wz1rXNxMH6rXnhLZbJzxXj9RFaMX7r66JKUAedbHZ173WuZOoPIXVPrx96n51fxem7LuGHHNStS62MDlGNYSeMtcS567KWoOEyhxrPT7YqyU01vki/S+C8wfoqTMTbiKjshS46IECY73T08Dw4B0kpW6LHP6Y686c9Mkv0Hdxru+zqvzuM5utWEFyFDPY8OLEhNFwB1JimnYKpJdsBSQ0xbzg00vNEPMwwhxCaz3gzhZFAmiL5nPEjg30mQyoThcxE4IK31KuPNGYj0musuUuofOews45wvRURV+cXZkTn5/eS6/E60g==",
+        "xmlnstfd": "http://www.sat.gob.mx/TimbreFiscalDigital",
+        "xmlnsxsi": "http://www.w3.org/2001/XMLSchema-instance"
+      },
+      "nomina12Nomina": {
+        "nomina12Percepciones": {
+          "nomina12Percepcion": []
+        },
+        "nomina12Deducciones": {
+          "nomina12Deduccion": []
+        }
+      },
+      "cartaporte20CartaPorte": {
+        "cartaporte20Ubicaciones": {
+          "cartaporte20Ubicacion": []
+        },
+        "cartaporte20Mercancias": {
+          "cartaporte20Autotransporte": {
+            "cartaporte20Remolques": {
+              "cartaporte20Remolque": []
+            }
+          }
+        }
+      }
+    }
+  },
+  "__v": 0
+}
+
+
+{
+  "CtaBeneficiario": "0136993435",
+  "FechaPago": "2024-01-30T12:00:00",
+  "FormaDePagoP": "03",
+  "MonedaP": "MXN",
+  "Monto": "2306841.60",
+  "RfcEmisorCtaBen": "BBA830831LJ2",
+  "TipoCambioP": "1",
+  "pago20:DoctoRelacionado": [
+    {
+      "EquivalenciaDR": "1",
+      "Folio": "17773",
+      "IdDocumento": "65B03938-85A8-49C7-841B-79BABF89F10F",
+      "ImpPagado": "23296.00",
+      "ImpSaldoAnt": "23296.00",
+      "ImpSaldoInsoluto": "0.00",
+      "MonedaDR": "MXN",
+      "NumParcialidad": "1",
+      "ObjetoImpDR": "02",
+      "Serie": "CFCP",
+      "pago20:ImpuestosDR": {
+        "pago20:RetencionesDR": {
+          "pago20:RetencionDR": {
+            "BaseDR": "20800.000000",
+            "ImporteDR": "832.000000",
+            "ImpuestoDR": "002",
+            "TasaOCuotaDR": "0.040000",
+            "TipoFactorDR": "Tasa"
+          }
+        },
+        "pago20:TrasladosDR": {
+          "pago20:TrasladoDR": {
+            "BaseDR": "20800.000000",
+            "ImporteDR": "3328.000000",
+            "ImpuestoDR": "002",
+            "TasaOCuotaDR": "0.160000",
+            "TipoFactorDR": "Tasa"
+          }
+        }
+      }
+    },
+    {
+      "EquivalenciaDR": "1",
+      "Folio": "17776",
+      "IdDocumento": "3612260E-EB39-46F1-AB08-DB09C48C8EB2",
+      "ImpPagado": "26432.00",
+      "ImpSaldoAnt": "26432.00",
+      "ImpSaldoInsoluto": "0.00",
+      "MonedaDR": "MXN",
+      "NumParcialidad": "1",
+      "ObjetoImpDR": "02",
+      "Serie": "CFCP",
+      "pago20:ImpuestosDR": {
+        "pago20:RetencionesDR": {
+          "pago20:RetencionDR": {
+            "BaseDR": "23600.000000",
+            "ImporteDR": "944.000000",
+            "ImpuestoDR": "002",
+            "TasaOCuotaDR": "0.040000",
+            "TipoFactorDR": "Tasa"
+          }
+        },
+        "pago20:TrasladosDR": {
+          "pago20:TrasladoDR": {
+            "BaseDR": "23600.000000",
+            "ImporteDR": "3776.000000",
+            "ImpuestoDR": "002",
+            "TasaOCuotaDR": "0.160000",
+            "TipoFactorDR": "Tasa"
+          }
+        }
+      }
+    },
+    {
+      "EquivalenciaDR": "1",
+      "Folio": "17778",
+      "IdDocumento": "7E9F3597-B3DB-45B2-A592-845BE0640B6F",
+      "ImpPagado": "26432.00",
+      "ImpSaldoAnt": "26432.00",
+      "ImpSaldoInsoluto": "0.00",
+      "MonedaDR": "MXN",
+      "NumParcialidad": "1",
+      "ObjetoImpDR": "02",
+      "Serie": "CFCP",
+      "pago20:ImpuestosDR": {
+        "pago20:RetencionesDR": {
+          "pago20:RetencionDR": {
+            "BaseDR": "23600.000000",
+            "ImporteDR": "944.000000",
+            "ImpuestoDR": "002",
+            "TasaOCuotaDR": "0.040000",
+            "TipoFactorDR": "Tasa"
+          }
+        },
+        "pago20:TrasladosDR": {
+          "pago20:TrasladoDR": {
+            "BaseDR": "23600.000000",
+            "ImporteDR": "3776.000000",
+            "ImpuestoDR": "002",
+            "TasaOCuotaDR": "0.160000",
+            "TipoFactorDR": "Tasa"
+          }
+        }
+      }
+    },
+    {
+      "EquivalenciaDR": "1",
+      "Folio": "17790",
+      "IdDocumento": "E619F4BD-FF00-436D-837F-5722A6BDF2A7",
+      "ImpPagado": "26432.00",
+      "ImpSaldoAnt": "26432.00",
+      "ImpSaldoInsoluto": "0.00",
+      "MonedaDR": "MXN",
+      "NumParcialidad": "1",
+      "ObjetoImpDR": "02",
+      "Serie": "CFCP",
+      "pago20:ImpuestosDR": {
+        "pago20:RetencionesDR": {
+          "pago20:RetencionDR": {
+            "BaseDR": "23600.000000",
+            "ImporteDR": "944.000000",
+            "ImpuestoDR": "002",
+            "TasaOCuotaDR": "0.040000",
+            "TipoFactorDR": "Tasa"
+          }
+        },
+        "pago20:TrasladosDR": {
+          "pago20:TrasladoDR": {
+            "BaseDR": "23600.000000",
+            "ImporteDR": "3776.000000",
+            "ImpuestoDR": "002",
+            "TasaOCuotaDR": "0.160000",
+            "TipoFactorDR": "Tasa"
+          }
+        }
+      }
+    },
+    {
+      "EquivalenciaDR": "1",
+      "Folio": "17791",
+      "IdDocumento": "B375BD94-D6DC-446F-B7F4-7E253ADD0002",
+      "ImpPagado": "26432.00",
+      "ImpSaldoAnt": "26432.00",
+      "ImpSaldoInsoluto": "0.00",
+      "MonedaDR": "MXN",
+      "NumParcialidad": "1",
+      "ObjetoImpDR": "02",
+      "Serie": "CFCP",
+      "pago20:ImpuestosDR": {
+        "pago20:RetencionesDR": {
+          "pago20:RetencionDR": {
+            "BaseDR": "23600.000000",
+            "ImporteDR": "944.000000",
+            "ImpuestoDR": "002",
+            "TasaOCuotaDR": "0.040000",
+            "TipoFactorDR": "Tasa"
+          }
+        },
+        "pago20:TrasladosDR": {
+          "pago20:TrasladoDR": {
+            "BaseDR": "23600.000000",
+            "ImporteDR": "3776.000000",
+            "ImpuestoDR": "002",
+            "TasaOCuotaDR": "0.160000",
+            "TipoFactorDR": "Tasa"
+          }
+        }
+      }
+    },
+    {
+      "EquivalenciaDR": "1",
+      "Folio": "17792",
+      "IdDocumento": "03F2E493-6BA0-42F8-ABAC-324B5C06B8DE",
+      "ImpPagado": "26432.00",
+      "ImpSaldoAnt": "26432.00",
+      "ImpSaldoInsoluto": "0.00",
+      "MonedaDR": "MXN",
+      "NumParcialidad": "1",
+      "ObjetoImpDR": "02",
+      "Serie": "CFCP",
+      "pago20:ImpuestosDR": {
+        "pago20:RetencionesDR": {
+          "pago20:RetencionDR": {
+            "BaseDR": "23600.000000",
+            "ImporteDR": "944.000000",
+            "ImpuestoDR": "002",
+            "TasaOCuotaDR": "0.040000",
+            "TipoFactorDR": "Tasa"
+          }
+        },
+        "pago20:TrasladosDR": {
+          "pago20:TrasladoDR": {
+            "BaseDR": "23600.000000",
+            "ImporteDR": "3776.000000",
+            "ImpuestoDR": "002",
+            "TasaOCuotaDR": "0.160000",
+            "TipoFactorDR": "Tasa"
+          }
+        }
+      }
+    },
+    {
+      "EquivalenciaDR": "1",
+      "Folio": "17829",
+      "IdDocumento": "6EB999AB-689E-45A1-810D-0BAEF79A8D56",
+      "ImpPagado": "14380.80",
+      "ImpSaldoAnt": "14380.80",
+      "ImpSaldoInsoluto": "0.00",
+      "MonedaDR": "MXN",
+      "NumParcialidad": "1",
+      "ObjetoImpDR": "02",
+      "Serie": "CFCP",
+      "pago20:ImpuestosDR": {
+        "pago20:RetencionesDR": {
+          "pago20:RetencionDR": {
+            "BaseDR": "12840.000000",
+            "ImporteDR": "513.600000",
+            "ImpuestoDR": "002",
+            "TasaOCuotaDR": "0.040000",
+            "TipoFactorDR": "Tasa"
+          }
+        },
+        "pago20:TrasladosDR": {
+          "pago20:TrasladoDR": {
+            "BaseDR": "12840.000000",
+            "ImporteDR": "2054.400000",
+            "ImpuestoDR": "002",
+            "TasaOCuotaDR": "0.160000",
+            "TipoFactorDR": "Tasa"
+          }
+        }
+      }
+    },
+    {
+      "EquivalenciaDR": "1",
+      "Folio": "17834",
+      "IdDocumento": "D7822A9A-D3DF-4879-982A-977767580B3C",
+      "ImpPagado": "14380.80",
+      "ImpSaldoAnt": "14380.80",
+      "ImpSaldoInsoluto": "0.00",
+      "MonedaDR": "MXN",
+      "NumParcialidad": "1",
+      "ObjetoImpDR": "02",
+      "Serie": "CFCP",
+      "pago20:ImpuestosDR": {
+        "pago20:RetencionesDR": {
+          "pago20:RetencionDR": {
+            "BaseDR": "12840.000000",
+            "ImporteDR": "513.600000",
+            "ImpuestoDR": "002",
+            "TasaOCuotaDR": "0.040000",
+            "TipoFactorDR": "Tasa"
+          }
+        },
+        "pago20:TrasladosDR": {
+          "pago20:TrasladoDR": {
+            "BaseDR": "12840.000000",
+            "ImporteDR": "2054.400000",
+            "ImpuestoDR": "002",
+            "TasaOCuotaDR": "0.160000",
+            "TipoFactorDR": "Tasa"
+          }
+        }
+      }
+    },
+    {
+      "EquivalenciaDR": "1",
+      "Folio": "17836",
+      "IdDocumento": "D5C340BF-9A9E-48DD-AAEA-C15D633712F4",
+      "ImpPagado": "14380.80",
+      "ImpSaldoAnt": "14380.80",
+      "ImpSaldoInsoluto": "0.00",
+      "MonedaDR": "MXN",
+      "NumParcialidad": "1",
+      "ObjetoImpDR": "02",
+      "Serie": "CFCP",
+      "pago20:ImpuestosDR": {
+        "pago20:RetencionesDR": {
+          "pago20:RetencionDR": {
+            "BaseDR": "12840.000000",
+            "ImporteDR": "513.600000",
+            "ImpuestoDR": "002",
+            "TasaOCuotaDR": "0.040000",
+            "TipoFactorDR": "Tasa"
+          }
+        },
+        "pago20:TrasladosDR": {
+          "pago20:TrasladoDR": {
+            "BaseDR": "12840.000000",
+            "ImporteDR": "2054.400000",
+            "ImpuestoDR": "002",
+            "TasaOCuotaDR": "0.160000",
+            "TipoFactorDR": "Tasa"
+          }
+        }
+      }
+    },
+    {
+      "EquivalenciaDR": "1",
+      "Folio": "17837",
+      "IdDocumento": "2A4F26D2-73CD-443D-BED8-25F832775CD6",
+      "ImpPagado": "14380.80",
+      "ImpSaldoAnt": "14380.80",
+      "ImpSaldoInsoluto": "0.00",
+      "MonedaDR": "MXN",
+      "NumParcialidad": "1",
+      "ObjetoImpDR": "02",
+      "Serie": "CFCP",
+      "pago20:ImpuestosDR": {
+        "pago20:RetencionesDR": {
+          "pago20:RetencionDR": {
+            "BaseDR": "12840.000000",
+            "ImporteDR": "513.600000",
+            "ImpuestoDR": "002",
+            "TasaOCuotaDR": "0.040000",
+            "TipoFactorDR": "Tasa"
+          }
+        },
+        "pago20:TrasladosDR": {
+          "pago20:TrasladoDR": {
+            "BaseDR": "12840.000000",
+            "ImporteDR": "2054.400000",
+            "ImpuestoDR": "002",
+            "TasaOCuotaDR": "0.160000",
+            "TipoFactorDR": "Tasa"
+          }
+        }
+      }
+    },
+    {
+      "EquivalenciaDR": "1",
+      "Folio": "18117",
+      "IdDocumento": "9CC8E06E-F420-4D01-BAAC-C06CBA8282CE",
+      "ImpPagado": "14380.80",
+      "ImpSaldoAnt": "14380.80",
+      "ImpSaldoInsoluto": "0.00",
+      "MonedaDR": "MXN",
+      "NumParcialidad": "1",
+      "ObjetoImpDR": "02",
+      "Serie": "CFCP",
+      "pago20:ImpuestosDR": {
+        "pago20:RetencionesDR": {
+          "pago20:RetencionDR": {
+            "BaseDR": "12840.000000",
+            "ImporteDR": "513.600000",
+            "ImpuestoDR": "002",
+            "TasaOCuotaDR": "0.040000",
+            "TipoFactorDR": "Tasa"
+          }
+        },
+        "pago20:TrasladosDR": {
+          "pago20:TrasladoDR": {
+            "BaseDR": "12840.000000",
+            "ImporteDR": "2054.400000",
+            "ImpuestoDR": "002",
+            "TasaOCuotaDR": "0.160000",
+            "TipoFactorDR": "Tasa"
+          }
+        }
+      }
+    },
+    {
+      "EquivalenciaDR": "1",
+      "Folio": "18136",
+      "IdDocumento": "F5788F0F-7442-4057-B623-8AD230A04B23",
+      "ImpPagado": "47712.00",
+      "ImpSaldoAnt": "47712.00",
+      "ImpSaldoInsoluto": "0.00",
+      "MonedaDR": "MXN",
+      "NumParcialidad": "1",
+      "ObjetoImpDR": "02",
+      "Serie": "CFCP",
+      "pago20:ImpuestosDR": {
+        "pago20:RetencionesDR": {
+          "pago20:RetencionDR": {
+            "BaseDR": "42600.000000",
+            "ImporteDR": "1704.000000",
+            "ImpuestoDR": "002",
+            "TasaOCuotaDR": "0.040000",
+            "TipoFactorDR": "Tasa"
+          }
+        },
+        "pago20:TrasladosDR": {
+          "pago20:TrasladoDR": {
+            "BaseDR": "42600.000000",
+            "ImporteDR": "6816.000000",
+            "ImpuestoDR": "002",
+            "TasaOCuotaDR": "0.160000",
+            "TipoFactorDR": "Tasa"
+          }
+        }
+      }
+    },
+    {
+      "EquivalenciaDR": "1",
+      "Folio": "18137",
+      "IdDocumento": "E45F24ED-0B8D-4697-8A6B-19020F426B09",
+      "ImpPagado": "26432.00",
+      "ImpSaldoAnt": "26432.00",
+      "ImpSaldoInsoluto": "0.00",
+      "MonedaDR": "MXN",
+      "NumParcialidad": "1",
+      "ObjetoImpDR": "02",
+      "Serie": "CFCP",
+      "pago20:ImpuestosDR": {
+        "pago20:RetencionesDR": {
+          "pago20:RetencionDR": {
+            "BaseDR": "23600.000000",
+            "ImporteDR": "944.000000",
+            "ImpuestoDR": "002",
+            "TasaOCuotaDR": "0.040000",
+            "TipoFactorDR": "Tasa"
+          }
+        },
+        "pago20:TrasladosDR": {
+          "pago20:TrasladoDR": {
+            "BaseDR": "23600.000000",
+            "ImporteDR": "3776.000000",
+            "ImpuestoDR": "002",
+            "TasaOCuotaDR": "0.160000",
+            "TipoFactorDR": "Tasa"
+          }
+        }
+      }
+    },
+    {
+      "EquivalenciaDR": "1",
+      "Folio": "18138",
+      "IdDocumento": "60C1E163-0EA5-4FB6-99C7-EDCB6BEF1224",
+      "ImpPagado": "26432.00",
+      "ImpSaldoAnt": "26432.00",
+      "ImpSaldoInsoluto": "0.00",
+      "MonedaDR": "MXN",
+      "NumParcialidad": "1",
+      "ObjetoImpDR": "02",
+      "Serie": "CFCP",
+      "pago20:ImpuestosDR": {
+        "pago20:RetencionesDR": {
+          "pago20:RetencionDR": {
+            "BaseDR": "23600.000000",
+            "ImporteDR": "944.000000",
+            "ImpuestoDR": "002",
+            "TasaOCuotaDR": "0.040000",
+            "TipoFactorDR": "Tasa"
+          }
+        },
+        "pago20:TrasladosDR": {
+          "pago20:TrasladoDR": {
+            "BaseDR": "23600.000000",
+            "ImporteDR": "3776.000000",
+            "ImpuestoDR": "002",
+            "TasaOCuotaDR": "0.160000",
+            "TipoFactorDR": "Tasa"
+          }
+        }
+      }
+    },
+    {
+      "EquivalenciaDR": "1",
+      "Folio": "18139",
+      "IdDocumento": "F97D7F22-4D32-4D9F-A792-49C52F60038A",
+      "ImpPagado": "26432.00",
+      "ImpSaldoAnt": "26432.00",
+      "ImpSaldoInsoluto": "0.00",
+      "MonedaDR": "MXN",
+      "NumParcialidad": "1",
+      "ObjetoImpDR": "02",
+      "Serie": "CFCP",
+      "pago20:ImpuestosDR": {
+        "pago20:RetencionesDR": {
+          "pago20:RetencionDR": {
+            "BaseDR": "23600.000000",
+            "ImporteDR": "944.000000",
+            "ImpuestoDR": "002",
+            "TasaOCuotaDR": "0.040000",
+            "TipoFactorDR": "Tasa"
+          }
+        },
+        "pago20:TrasladosDR": {
+          "pago20:TrasladoDR": {
+            "BaseDR": "23600.000000",
+            "ImporteDR": "3776.000000",
+            "ImpuestoDR": "002",
+            "TasaOCuotaDR": "0.160000",
+            "TipoFactorDR": "Tasa"
+          }
+        }
+      }
+    },
+    {
+      "EquivalenciaDR": "1",
+      "Folio": "18140",
+      "IdDocumento": "6C00CB55-3445-4EEE-9328-7FF5925E31C4",
+      "ImpPagado": "26432.00",
+      "ImpSaldoAnt": "26432.00",
+      "ImpSaldoInsoluto": "0.00",
+      "MonedaDR": "MXN",
+      "NumParcialidad": "1",
+      "ObjetoImpDR": "02",
+      "Serie": "CFCP",
+      "pago20:ImpuestosDR": {
+        "pago20:RetencionesDR": {
+          "pago20:RetencionDR": {
+            "BaseDR": "23600.000000",
+            "ImporteDR": "944.000000",
+            "ImpuestoDR": "002",
+            "TasaOCuotaDR": "0.040000",
+            "TipoFactorDR": "Tasa"
+          }
+        },
+        "pago20:TrasladosDR": {
+          "pago20:TrasladoDR": {
+            "BaseDR": "23600.000000",
+            "ImporteDR": "3776.000000",
+            "ImpuestoDR": "002",
+            "TasaOCuotaDR": "0.160000",
+            "TipoFactorDR": "Tasa"
+          }
+        }
+      }
+    },
+    {
+      "EquivalenciaDR": "1",
+      "Folio": "18141",
+      "IdDocumento": "3357AC47-5128-484E-8E05-4995A81FCB28",
+      "ImpPagado": "26432.00",
+      "ImpSaldoAnt": "26432.00",
+      "ImpSaldoInsoluto": "0.00",
+      "MonedaDR": "MXN",
+      "NumParcialidad": "1",
+      "ObjetoImpDR": "02",
+      "Serie": "CFCP",
+      "pago20:ImpuestosDR": {
+        "pago20:RetencionesDR": {
+          "pago20:RetencionDR": {
+            "BaseDR": "23600.000000",
+            "ImporteDR": "944.000000",
+            "ImpuestoDR": "002",
+            "TasaOCuotaDR": "0.040000",
+            "TipoFactorDR": "Tasa"
+          }
+        },
+        "pago20:TrasladosDR": {
+          "pago20:TrasladoDR": {
+            "BaseDR": "23600.000000",
+            "ImporteDR": "3776.000000",
+            "ImpuestoDR": "002",
+            "TasaOCuotaDR": "0.160000",
+            "TipoFactorDR": "Tasa"
+          }
+        }
+      }
+    },
+    {
+      "EquivalenciaDR": "1",
+      "Folio": "18142",
+      "IdDocumento": "C7526C59-1DE6-4244-988D-F1D6516341B3",
+      "ImpPagado": "26432.00",
+      "ImpSaldoAnt": "26432.00",
+      "ImpSaldoInsoluto": "0.00",
+      "MonedaDR": "MXN",
+      "NumParcialidad": "1",
+      "ObjetoImpDR": "02",
+      "Serie": "CFCP",
+      "pago20:ImpuestosDR": {
+        "pago20:RetencionesDR": {
+          "pago20:RetencionDR": {
+            "BaseDR": "23600.000000",
+            "ImporteDR": "944.000000",
+            "ImpuestoDR": "002",
+            "TasaOCuotaDR": "0.040000",
+            "TipoFactorDR": "Tasa"
+          }
+        },
+        "pago20:TrasladosDR": {
+          "pago20:TrasladoDR": {
+            "BaseDR": "23600.000000",
+            "ImporteDR": "3776.000000",
+            "ImpuestoDR": "002",
+            "TasaOCuotaDR": "0.160000",
+            "TipoFactorDR": "Tasa"
+          }
+        }
+      }
+    },
+    {
+      "EquivalenciaDR": "1",
+      "Folio": "18144",
+      "IdDocumento": "DC399585-60F1-4910-A2C9-A843AB5BECC7",
+      "ImpPagado": "26432.00",
+      "ImpSaldoAnt": "26432.00",
+      "ImpSaldoInsoluto": "0.00",
+      "MonedaDR": "MXN",
+      "NumParcialidad": "1",
+      "ObjetoImpDR": "02",
+      "Serie": "CFCP",
+      "pago20:ImpuestosDR": {
+        "pago20:RetencionesDR": {
+          "pago20:RetencionDR": {
+            "BaseDR": "23600.000000",
+            "ImporteDR": "944.000000",
+            "ImpuestoDR": "002",
+            "TasaOCuotaDR": "0.040000",
+            "TipoFactorDR": "Tasa"
+          }
+        },
+        "pago20:TrasladosDR": {
+          "pago20:TrasladoDR": {
+            "BaseDR": "23600.000000",
+            "ImporteDR": "3776.000000",
+            "ImpuestoDR": "002",
+            "TasaOCuotaDR": "0.160000",
+            "TipoFactorDR": "Tasa"
+          }
+        }
+      }
+    },
+    {
+      "EquivalenciaDR": "1",
+      "Folio": "18145",
+      "IdDocumento": "3E7B86CF-47E2-4CD7-95A6-83D52DF7151D",
+      "ImpPagado": "47712.00",
+      "ImpSaldoAnt": "47712.00",
+      "ImpSaldoInsoluto": "0.00",
+      "MonedaDR": "MXN",
+      "NumParcialidad": "1",
+      "ObjetoImpDR": "02",
+      "Serie": "CFCP",
+      "pago20:ImpuestosDR": {
+        "pago20:RetencionesDR": {
+          "pago20:RetencionDR": {
+            "BaseDR": "42600.000000",
+            "ImporteDR": "1704.000000",
+            "ImpuestoDR": "002",
+            "TasaOCuotaDR": "0.040000",
+            "TipoFactorDR": "Tasa"
+          }
+        },
+        "pago20:TrasladosDR": {
+          "pago20:TrasladoDR": {
+            "BaseDR": "42600.000000",
+            "ImporteDR": "6816.000000",
+            "ImpuestoDR": "002",
+            "TasaOCuotaDR": "0.160000",
+            "TipoFactorDR": "Tasa"
+          }
+        }
+      }
+    },
+    {
+      "EquivalenciaDR": "1",
+      "Folio": "18146",
+      "IdDocumento": "0277B046-F151-4DC4-BDDA-408904DEB001",
+      "ImpPagado": "26432.00",
+      "ImpSaldoAnt": "26432.00",
+      "ImpSaldoInsoluto": "0.00",
+      "MonedaDR": "MXN",
+      "NumParcialidad": "1",
+      "ObjetoImpDR": "02",
+      "Serie": "CFCP",
+      "pago20:ImpuestosDR": {
+        "pago20:RetencionesDR": {
+          "pago20:RetencionDR": {
+            "BaseDR": "23600.000000",
+            "ImporteDR": "944.000000",
+            "ImpuestoDR": "002",
+            "TasaOCuotaDR": "0.040000",
+            "TipoFactorDR": "Tasa"
+          }
+        },
+        "pago20:TrasladosDR": {
+          "pago20:TrasladoDR": {
+            "BaseDR": "23600.000000",
+            "ImporteDR": "3776.000000",
+            "ImpuestoDR": "002",
+            "TasaOCuotaDR": "0.160000",
+            "TipoFactorDR": "Tasa"
+          }
+        }
+      }
+    },
+    {
+      "EquivalenciaDR": "1",
+      "Folio": "18147",
+      "IdDocumento": "107D53A2-A5D0-4E98-863D-78689ACE15FA",
+      "ImpPagado": "26432.00",
+      "ImpSaldoAnt": "26432.00",
+      "ImpSaldoInsoluto": "0.00",
+      "MonedaDR": "MXN",
+      "NumParcialidad": "1",
+      "ObjetoImpDR": "02",
+      "Serie": "CFCP",
+      "pago20:ImpuestosDR": {
+        "pago20:RetencionesDR": {
+          "pago20:RetencionDR": {
+            "BaseDR": "23600.000000",
+            "ImporteDR": "944.000000",
+            "ImpuestoDR": "002",
+            "TasaOCuotaDR": "0.040000",
+            "TipoFactorDR": "Tasa"
+          }
+        },
+        "pago20:TrasladosDR": {
+          "pago20:TrasladoDR": {
+            "BaseDR": "23600.000000",
+            "ImporteDR": "3776.000000",
+            "ImpuestoDR": "002",
+            "TasaOCuotaDR": "0.160000",
+            "TipoFactorDR": "Tasa"
+          }
+        }
+      }
+    },
+    {
+      "EquivalenciaDR": "1",
+      "Folio": "18148",
+      "IdDocumento": "5BFBFB4F-9EB6-49FF-83E3-0A0C1E72B610",
+      "ImpPagado": "26432.00",
+      "ImpSaldoAnt": "26432.00",
+      "ImpSaldoInsoluto": "0.00",
+      "MonedaDR": "MXN",
+      "NumParcialidad": "1",
+      "ObjetoImpDR": "02",
+      "Serie": "CFCP",
+      "pago20:ImpuestosDR": {
+        "pago20:RetencionesDR": {
+          "pago20:RetencionDR": {
+            "BaseDR": "23600.000000",
+            "ImporteDR": "944.000000",
+            "ImpuestoDR": "002",
+            "TasaOCuotaDR": "0.040000",
+            "TipoFactorDR": "Tasa"
+          }
+        },
+        "pago20:TrasladosDR": {
+          "pago20:TrasladoDR": {
+            "BaseDR": "23600.000000",
+            "ImporteDR": "3776.000000",
+            "ImpuestoDR": "002",
+            "TasaOCuotaDR": "0.160000",
+            "TipoFactorDR": "Tasa"
+          }
+        }
+      }
+    },
+    {
+      "EquivalenciaDR": "1",
+      "Folio": "18149",
+      "IdDocumento": "14DBB71A-4583-4211-9C1A-AA054BE07060",
+      "ImpPagado": "26432.00",
+      "ImpSaldoAnt": "26432.00",
+      "ImpSaldoInsoluto": "0.00",
+      "MonedaDR": "MXN",
+      "NumParcialidad": "1",
+      "ObjetoImpDR": "02",
+      "Serie": "CFCP",
+      "pago20:ImpuestosDR": {
+        "pago20:RetencionesDR": {
+          "pago20:RetencionDR": {
+            "BaseDR": "23600.000000",
+            "ImporteDR": "944.000000",
+            "ImpuestoDR": "002",
+            "TasaOCuotaDR": "0.040000",
+            "TipoFactorDR": "Tasa"
+          }
+        },
+        "pago20:TrasladosDR": {
+          "pago20:TrasladoDR": {
+            "BaseDR": "23600.000000",
+            "ImporteDR": "3776.000000",
+            "ImpuestoDR": "002",
+            "TasaOCuotaDR": "0.160000",
+            "TipoFactorDR": "Tasa"
+          }
+        }
+      }
+    },
+    {
+      "EquivalenciaDR": "1",
+      "Folio": "18150",
+      "IdDocumento": "833ABDF8-5CBD-459E-A851-EAD90EFB6A9E",
+      "ImpPagado": "26432.00",
+      "ImpSaldoAnt": "26432.00",
+      "ImpSaldoInsoluto": "0.00",
+      "MonedaDR": "MXN",
+      "NumParcialidad": "1",
+      "ObjetoImpDR": "02",
+      "Serie": "CFCP",
+      "pago20:ImpuestosDR": {
+        "pago20:RetencionesDR": {
+          "pago20:RetencionDR": {
+            "BaseDR": "23600.000000",
+            "ImporteDR": "944.000000",
+            "ImpuestoDR": "002",
+            "TasaOCuotaDR": "0.040000",
+            "TipoFactorDR": "Tasa"
+          }
+        },
+        "pago20:TrasladosDR": {
+          "pago20:TrasladoDR": {
+            "BaseDR": "23600.000000",
+            "ImporteDR": "3776.000000",
+            "ImpuestoDR": "002",
+            "TasaOCuotaDR": "0.160000",
+            "TipoFactorDR": "Tasa"
+          }
+        }
+      }
+    },
+    {
+      "EquivalenciaDR": "1",
+      "Folio": "18152",
+      "IdDocumento": "FC56D79B-BDC0-411F-BCCF-1E234E3B6149",
+      "ImpPagado": "26432.00",
+      "ImpSaldoAnt": "26432.00",
+      "ImpSaldoInsoluto": "0.00",
+      "MonedaDR": "MXN",
+      "NumParcialidad": "1",
+      "ObjetoImpDR": "02",
+      "Serie": "CFCP",
+      "pago20:ImpuestosDR": {
+        "pago20:RetencionesDR": {
+          "pago20:RetencionDR": {
+            "BaseDR": "23600.000000",
+            "ImporteDR": "944.000000",
+            "ImpuestoDR": "002",
+            "TasaOCuotaDR": "0.040000",
+            "TipoFactorDR": "Tasa"
+          }
+        },
+        "pago20:TrasladosDR": {
+          "pago20:TrasladoDR": {
+            "BaseDR": "23600.000000",
+            "ImporteDR": "3776.000000",
+            "ImpuestoDR": "002",
+            "TasaOCuotaDR": "0.160000",
+            "TipoFactorDR": "Tasa"
+          }
+        }
+      }
+    },
+    {
+      "EquivalenciaDR": "1",
+      "Folio": "18153",
+      "IdDocumento": "A3665DB0-390F-4005-BD62-5CCD46AF265E",
+      "ImpPagado": "26432.00",
+      "ImpSaldoAnt": "26432.00",
+      "ImpSaldoInsoluto": "0.00",
+      "MonedaDR": "MXN",
+      "NumParcialidad": "1",
+      "ObjetoImpDR": "02",
+      "Serie": "CFCP",
+      "pago20:ImpuestosDR": {
+        "pago20:RetencionesDR": {
+          "pago20:RetencionDR": {
+            "BaseDR": "23600.000000",
+            "ImporteDR": "944.000000",
+            "ImpuestoDR": "002",
+            "TasaOCuotaDR": "0.040000",
+            "TipoFactorDR": "Tasa"
+          }
+        },
+        "pago20:TrasladosDR": {
+          "pago20:TrasladoDR": {
+            "BaseDR": "23600.000000",
+            "ImporteDR": "3776.000000",
+            "ImpuestoDR": "002",
+            "TasaOCuotaDR": "0.160000",
+            "TipoFactorDR": "Tasa"
+          }
+        }
+      }
+    },
+    {
+      "EquivalenciaDR": "1",
+      "Folio": "18154",
+      "IdDocumento": "5D1152A4-B7FE-4DD7-9FB0-7CA918089E50",
+      "ImpPagado": "26432.00",
+      "ImpSaldoAnt": "26432.00",
+      "ImpSaldoInsoluto": "0.00",
+      "MonedaDR": "MXN",
+      "NumParcialidad": "1",
+      "ObjetoImpDR": "02",
+      "Serie": "CFCP",
+      "pago20:ImpuestosDR": {
+        "pago20:RetencionesDR": {
+          "pago20:RetencionDR": {
+            "BaseDR": "23600.000000",
+            "ImporteDR": "944.000000",
+            "ImpuestoDR": "002",
+            "TasaOCuotaDR": "0.040000",
+            "TipoFactorDR": "Tasa"
+          }
+        },
+        "pago20:TrasladosDR": {
+          "pago20:TrasladoDR": {
+            "BaseDR": "23600.000000",
+            "ImporteDR": "3776.000000",
+            "ImpuestoDR": "002",
+            "TasaOCuotaDR": "0.160000",
+            "TipoFactorDR": "Tasa"
+          }
+        }
+      }
+    },
+    {
+      "EquivalenciaDR": "1",
+      "Folio": "18155",
+      "IdDocumento": "23D6EA76-C9B3-4DD0-991A-285BDCFBB7AA",
+      "ImpPagado": "26432.00",
+      "ImpSaldoAnt": "26432.00",
+      "ImpSaldoInsoluto": "0.00",
+      "MonedaDR": "MXN",
+      "NumParcialidad": "1",
+      "ObjetoImpDR": "02",
+      "Serie": "CFCP",
+      "pago20:ImpuestosDR": {
+        "pago20:RetencionesDR": {
+          "pago20:RetencionDR": {
+            "BaseDR": "23600.000000",
+            "ImporteDR": "944.000000",
+            "ImpuestoDR": "002",
+            "TasaOCuotaDR": "0.040000",
+            "TipoFactorDR": "Tasa"
+          }
+        },
+        "pago20:TrasladosDR": {
+          "pago20:TrasladoDR": {
+            "BaseDR": "23600.000000",
+            "ImporteDR": "3776.000000",
+            "ImpuestoDR": "002",
+            "TasaOCuotaDR": "0.160000",
+            "TipoFactorDR": "Tasa"
+          }
+        }
+      }
+    },
+    {
+      "EquivalenciaDR": "1",
+      "Folio": "18156",
+      "IdDocumento": "7BF34274-FE39-41C1-8305-A63B73D18328",
+      "ImpPagado": "26432.00",
+      "ImpSaldoAnt": "26432.00",
+      "ImpSaldoInsoluto": "0.00",
+      "MonedaDR": "MXN",
+      "NumParcialidad": "1",
+      "ObjetoImpDR": "02",
+      "Serie": "CFCP",
+      "pago20:ImpuestosDR": {
+        "pago20:RetencionesDR": {
+          "pago20:RetencionDR": {
+            "BaseDR": "23600.000000",
+            "ImporteDR": "944.000000",
+            "ImpuestoDR": "002",
+            "TasaOCuotaDR": "0.040000",
+            "TipoFactorDR": "Tasa"
+          }
+        },
+        "pago20:TrasladosDR": {
+          "pago20:TrasladoDR": {
+            "BaseDR": "23600.000000",
+            "ImporteDR": "3776.000000",
+            "ImpuestoDR": "002",
+            "TasaOCuotaDR": "0.160000",
+            "TipoFactorDR": "Tasa"
+          }
+        }
+      }
+    },
+    {
+      "EquivalenciaDR": "1",
+      "Folio": "18158",
+      "IdDocumento": "64DFC5F1-068E-4EA0-A556-6EB0D16B437E",
+      "ImpPagado": "26432.00",
+      "ImpSaldoAnt": "26432.00",
+      "ImpSaldoInsoluto": "0.00",
+      "MonedaDR": "MXN",
+      "NumParcialidad": "1",
+      "ObjetoImpDR": "02",
+      "Serie": "CFCP",
+      "pago20:ImpuestosDR": {
+        "pago20:RetencionesDR": {
+          "pago20:RetencionDR": {
+            "BaseDR": "23600.000000",
+            "ImporteDR": "944.000000",
+            "ImpuestoDR": "002",
+            "TasaOCuotaDR": "0.040000",
+            "TipoFactorDR": "Tasa"
+          }
+        },
+        "pago20:TrasladosDR": {
+          "pago20:TrasladoDR": {
+            "BaseDR": "23600.000000",
+            "ImporteDR": "3776.000000",
+            "ImpuestoDR": "002",
+            "TasaOCuotaDR": "0.160000",
+            "TipoFactorDR": "Tasa"
+          }
+        }
+      }
+    },
+    {
+      "EquivalenciaDR": "1",
+      "Folio": "18159",
+      "IdDocumento": "7794450A-96E3-4EAF-9ADC-3488966791F4",
+      "ImpPagado": "26432.00",
+      "ImpSaldoAnt": "26432.00",
+      "ImpSaldoInsoluto": "0.00",
+      "MonedaDR": "MXN",
+      "NumParcialidad": "1",
+      "ObjetoImpDR": "02",
+      "Serie": "CFCP",
+      "pago20:ImpuestosDR": {
+        "pago20:RetencionesDR": {
+          "pago20:RetencionDR": {
+            "BaseDR": "23600.000000",
+            "ImporteDR": "944.000000",
+            "ImpuestoDR": "002",
+            "TasaOCuotaDR": "0.040000",
+            "TipoFactorDR": "Tasa"
+          }
+        },
+        "pago20:TrasladosDR": {
+          "pago20:TrasladoDR": {
+            "BaseDR": "23600.000000",
+            "ImporteDR": "3776.000000",
+            "ImpuestoDR": "002",
+            "TasaOCuotaDR": "0.160000",
+            "TipoFactorDR": "Tasa"
+          }
+        }
+      }
+    },
+    {
+      "EquivalenciaDR": "1",
+      "Folio": "18160",
+      "IdDocumento": "A21129DC-D45F-416F-A2C7-006C7C34CE3D",
+      "ImpPagado": "26432.00",
+      "ImpSaldoAnt": "26432.00",
+      "ImpSaldoInsoluto": "0.00",
+      "MonedaDR": "MXN",
+      "NumParcialidad": "1",
+      "ObjetoImpDR": "02",
+      "Serie": "CFCP",
+      "pago20:ImpuestosDR": {
+        "pago20:RetencionesDR": {
+          "pago20:RetencionDR": {
+            "BaseDR": "23600.000000",
+            "ImporteDR": "944.000000",
+            "ImpuestoDR": "002",
+            "TasaOCuotaDR": "0.040000",
+            "TipoFactorDR": "Tasa"
+          }
+        },
+        "pago20:TrasladosDR": {
+          "pago20:TrasladoDR": {
+            "BaseDR": "23600.000000",
+            "ImporteDR": "3776.000000",
+            "ImpuestoDR": "002",
+            "TasaOCuotaDR": "0.160000",
+            "TipoFactorDR": "Tasa"
+          }
+        }
+      }
+    },
+    {
+      "EquivalenciaDR": "1",
+      "Folio": "18161",
+      "IdDocumento": "E461C38E-B68F-4E5C-8C3E-B77AAEFBBC07",
+      "ImpPagado": "26432.00",
+      "ImpSaldoAnt": "26432.00",
+      "ImpSaldoInsoluto": "0.00",
+      "MonedaDR": "MXN",
+      "NumParcialidad": "1",
+      "ObjetoImpDR": "02",
+      "Serie": "CFCP",
+      "pago20:ImpuestosDR": {
+        "pago20:RetencionesDR": {
+          "pago20:RetencionDR": {
+            "BaseDR": "23600.000000",
+            "ImporteDR": "944.000000",
+            "ImpuestoDR": "002",
+            "TasaOCuotaDR": "0.040000",
+            "TipoFactorDR": "Tasa"
+          }
+        },
+        "pago20:TrasladosDR": {
+          "pago20:TrasladoDR": {
+            "BaseDR": "23600.000000",
+            "ImporteDR": "3776.000000",
+            "ImpuestoDR": "002",
+            "TasaOCuotaDR": "0.160000",
+            "TipoFactorDR": "Tasa"
+          }
+        }
+      }
+    },
+    {
+      "EquivalenciaDR": "1",
+      "Folio": "18162",
+      "IdDocumento": "09EC899E-EF41-4E68-ABDC-8D57C6034B89",
+      "ImpPagado": "26432.00",
+      "ImpSaldoAnt": "26432.00",
+      "ImpSaldoInsoluto": "0.00",
+      "MonedaDR": "MXN",
+      "NumParcialidad": "1",
+      "ObjetoImpDR": "02",
+      "Serie": "CFCP",
+      "pago20:ImpuestosDR": {
+        "pago20:RetencionesDR": {
+          "pago20:RetencionDR": {
+            "BaseDR": "23600.000000",
+            "ImporteDR": "944.000000",
+            "ImpuestoDR": "002",
+            "TasaOCuotaDR": "0.040000",
+            "TipoFactorDR": "Tasa"
+          }
+        },
+        "pago20:TrasladosDR": {
+          "pago20:TrasladoDR": {
+            "BaseDR": "23600.000000",
+            "ImporteDR": "3776.000000",
+            "ImpuestoDR": "002",
+            "TasaOCuotaDR": "0.160000",
+            "TipoFactorDR": "Tasa"
+          }
+        }
+      }
+    },
+    {
+      "EquivalenciaDR": "1",
+      "Folio": "18164",
+      "IdDocumento": "66E4373D-7D7A-4C9A-87F9-1B15EB0778DC",
+      "ImpPagado": "26432.00",
+      "ImpSaldoAnt": "26432.00",
+      "ImpSaldoInsoluto": "0.00",
+      "MonedaDR": "MXN",
+      "NumParcialidad": "1",
+      "ObjetoImpDR": "02",
+      "Serie": "CFCP",
+      "pago20:ImpuestosDR": {
+        "pago20:RetencionesDR": {
+          "pago20:RetencionDR": {
+            "BaseDR": "23600.000000",
+            "ImporteDR": "944.000000",
+            "ImpuestoDR": "002",
+            "TasaOCuotaDR": "0.040000",
+            "TipoFactorDR": "Tasa"
+          }
+        },
+        "pago20:TrasladosDR": {
+          "pago20:TrasladoDR": {
+            "BaseDR": "23600.000000",
+            "ImporteDR": "3776.000000",
+            "ImpuestoDR": "002",
+            "TasaOCuotaDR": "0.160000",
+            "TipoFactorDR": "Tasa"
+          }
+        }
+      }
+    },
+    {
+      "EquivalenciaDR": "1",
+      "Folio": "18165",
+      "IdDocumento": "C6F35339-1F3B-4C12-ACDC-678A2DDFAC8F",
+      "ImpPagado": "26432.00",
+      "ImpSaldoAnt": "26432.00",
+      "ImpSaldoInsoluto": "0.00",
+      "MonedaDR": "MXN",
+      "NumParcialidad": "1",
+      "ObjetoImpDR": "02",
+      "Serie": "CFCP",
+      "pago20:ImpuestosDR": {
+        "pago20:RetencionesDR": {
+          "pago20:RetencionDR": {
+            "BaseDR": "23600.000000",
+            "ImporteDR": "944.000000",
+            "ImpuestoDR": "002",
+            "TasaOCuotaDR": "0.040000",
+            "TipoFactorDR": "Tasa"
+          }
+        },
+        "pago20:TrasladosDR": {
+          "pago20:TrasladoDR": {
+            "BaseDR": "23600.000000",
+            "ImporteDR": "3776.000000",
+            "ImpuestoDR": "002",
+            "TasaOCuotaDR": "0.160000",
+            "TipoFactorDR": "Tasa"
+          }
+        }
+      }
+    },
+    {
+      "EquivalenciaDR": "1",
+      "Folio": "18166",
+      "IdDocumento": "59B9BCEC-8F4C-4536-A003-F0A5DB83E124",
+      "ImpPagado": "26432.00",
+      "ImpSaldoAnt": "26432.00",
+      "ImpSaldoInsoluto": "0.00",
+      "MonedaDR": "MXN",
+      "NumParcialidad": "1",
+      "ObjetoImpDR": "02",
+      "Serie": "CFCP",
+      "pago20:ImpuestosDR": {
+        "pago20:RetencionesDR": {
+          "pago20:RetencionDR": {
+            "BaseDR": "23600.000000",
+            "ImporteDR": "944.000000",
+            "ImpuestoDR": "002",
+            "TasaOCuotaDR": "0.040000",
+            "TipoFactorDR": "Tasa"
+          }
+        },
+        "pago20:TrasladosDR": {
+          "pago20:TrasladoDR": {
+            "BaseDR": "23600.000000",
+            "ImporteDR": "3776.000000",
+            "ImpuestoDR": "002",
+            "TasaOCuotaDR": "0.160000",
+            "TipoFactorDR": "Tasa"
+          }
+        }
+      }
+    },
+    {
+      "EquivalenciaDR": "1",
+      "Folio": "18167",
+      "IdDocumento": "EB286B30-8FB7-4076-9834-570CF53616B5",
+      "ImpPagado": "26432.00",
+      "ImpSaldoAnt": "26432.00",
+      "ImpSaldoInsoluto": "0.00",
+      "MonedaDR": "MXN",
+      "NumParcialidad": "1",
+      "ObjetoImpDR": "02",
+      "Serie": "CFCP",
+      "pago20:ImpuestosDR": {
+        "pago20:RetencionesDR": {
+          "pago20:RetencionDR": {
+            "BaseDR": "23600.000000",
+            "ImporteDR": "944.000000",
+            "ImpuestoDR": "002",
+            "TasaOCuotaDR": "0.040000",
+            "TipoFactorDR": "Tasa"
+          }
+        },
+        "pago20:TrasladosDR": {
+          "pago20:TrasladoDR": {
+            "BaseDR": "23600.000000",
+            "ImporteDR": "3776.000000",
+            "ImpuestoDR": "002",
+            "TasaOCuotaDR": "0.160000",
+            "TipoFactorDR": "Tasa"
+          }
+        }
+      }
+    },
+    {
+      "EquivalenciaDR": "1",
+      "Folio": "18168",
+      "IdDocumento": "2227BC23-5EE1-46D0-A759-0A337F66F372",
+      "ImpPagado": "26432.00",
+      "ImpSaldoAnt": "26432.00",
+      "ImpSaldoInsoluto": "0.00",
+      "MonedaDR": "MXN",
+      "NumParcialidad": "1",
+      "ObjetoImpDR": "02",
+      "Serie": "CFCP",
+      "pago20:ImpuestosDR": {
+        "pago20:RetencionesDR": {
+          "pago20:RetencionDR": {
+            "BaseDR": "23600.000000",
+            "ImporteDR": "944.000000",
+            "ImpuestoDR": "002",
+            "TasaOCuotaDR": "0.040000",
+            "TipoFactorDR": "Tasa"
+          }
+        },
+        "pago20:TrasladosDR": {
+          "pago20:TrasladoDR": {
+            "BaseDR": "23600.000000",
+            "ImporteDR": "3776.000000",
+            "ImpuestoDR": "002",
+            "TasaOCuotaDR": "0.160000",
+            "TipoFactorDR": "Tasa"
+          }
+        }
+      }
+    },
+    {
+      "EquivalenciaDR": "1",
+      "Folio": "18169",
+      "IdDocumento": "F6AAD8CA-B6D3-4E52-B749-3AA15CE8AE35",
+      "ImpPagado": "26432.00",
+      "ImpSaldoAnt": "26432.00",
+      "ImpSaldoInsoluto": "0.00",
+      "MonedaDR": "MXN",
+      "NumParcialidad": "1",
+      "ObjetoImpDR": "02",
+      "Serie": "CFCP",
+      "pago20:ImpuestosDR": {
+        "pago20:RetencionesDR": {
+          "pago20:RetencionDR": {
+            "BaseDR": "23600.000000",
+            "ImporteDR": "944.000000",
+            "ImpuestoDR": "002",
+            "TasaOCuotaDR": "0.040000",
+            "TipoFactorDR": "Tasa"
+          }
+        },
+        "pago20:TrasladosDR": {
+          "pago20:TrasladoDR": {
+            "BaseDR": "23600.000000",
+            "ImporteDR": "3776.000000",
+            "ImpuestoDR": "002",
+            "TasaOCuotaDR": "0.160000",
+            "TipoFactorDR": "Tasa"
+          }
+        }
+      }
+    },
+    {
+      "EquivalenciaDR": "1",
+      "Folio": "18170",
+      "IdDocumento": "29D204A0-65C7-420D-9DA9-5AD915931240",
+      "ImpPagado": "26432.00",
+      "ImpSaldoAnt": "26432.00",
+      "ImpSaldoInsoluto": "0.00",
+      "MonedaDR": "MXN",
+      "NumParcialidad": "1",
+      "ObjetoImpDR": "02",
+      "Serie": "CFCP",
+      "pago20:ImpuestosDR": {
+        "pago20:RetencionesDR": {
+          "pago20:RetencionDR": {
+            "BaseDR": "23600.000000",
+            "ImporteDR": "944.000000",
+            "ImpuestoDR": "002",
+            "TasaOCuotaDR": "0.040000",
+            "TipoFactorDR": "Tasa"
+          }
+        },
+        "pago20:TrasladosDR": {
+          "pago20:TrasladoDR": {
+            "BaseDR": "23600.000000",
+            "ImporteDR": "3776.000000",
+            "ImpuestoDR": "002",
+            "TasaOCuotaDR": "0.160000",
+            "TipoFactorDR": "Tasa"
+          }
+        }
+      }
+    },
+    {
+      "EquivalenciaDR": "1",
+      "Folio": "18171",
+      "IdDocumento": "6C100822-CA86-498D-991C-62939B16B8A3",
+      "ImpPagado": "26432.00",
+      "ImpSaldoAnt": "26432.00",
+      "ImpSaldoInsoluto": "0.00",
+      "MonedaDR": "MXN",
+      "NumParcialidad": "1",
+      "ObjetoImpDR": "02",
+      "Serie": "CFCP",
+      "pago20:ImpuestosDR": {
+        "pago20:RetencionesDR": {
+          "pago20:RetencionDR": {
+            "BaseDR": "23600.000000",
+            "ImporteDR": "944.000000",
+            "ImpuestoDR": "002",
+            "TasaOCuotaDR": "0.040000",
+            "TipoFactorDR": "Tasa"
+          }
+        },
+        "pago20:TrasladosDR": {
+          "pago20:TrasladoDR": {
+            "BaseDR": "23600.000000",
+            "ImporteDR": "3776.000000",
+            "ImpuestoDR": "002",
+            "TasaOCuotaDR": "0.160000",
+            "TipoFactorDR": "Tasa"
+          }
+        }
+      }
+    },
+    {
+      "EquivalenciaDR": "1",
+      "Folio": "18172",
+      "IdDocumento": "0A4BBCE6-064F-42A9-99BB-157941918756",
+      "ImpPagado": "26432.00",
+      "ImpSaldoAnt": "26432.00",
+      "ImpSaldoInsoluto": "0.00",
+      "MonedaDR": "MXN",
+      "NumParcialidad": "1",
+      "ObjetoImpDR": "02",
+      "Serie": "CFCP",
+      "pago20:ImpuestosDR": {
+        "pago20:RetencionesDR": {
+          "pago20:RetencionDR": {
+            "BaseDR": "23600.000000",
+            "ImporteDR": "944.000000",
+            "ImpuestoDR": "002",
+            "TasaOCuotaDR": "0.040000",
+            "TipoFactorDR": "Tasa"
+          }
+        },
+        "pago20:TrasladosDR": {
+          "pago20:TrasladoDR": {
+            "BaseDR": "23600.000000",
+            "ImporteDR": "3776.000000",
+            "ImpuestoDR": "002",
+            "TasaOCuotaDR": "0.160000",
+            "TipoFactorDR": "Tasa"
+          }
+        }
+      }
+    },
+    {
+      "EquivalenciaDR": "1",
+      "Folio": "18173",
+      "IdDocumento": "B6FE6491-9FA2-4295-B342-A4A21DCB56F2",
+      "ImpPagado": "26432.00",
+      "ImpSaldoAnt": "26432.00",
+      "ImpSaldoInsoluto": "0.00",
+      "MonedaDR": "MXN",
+      "NumParcialidad": "1",
+      "ObjetoImpDR": "02",
+      "Serie": "CFCP",
+      "pago20:ImpuestosDR": {
+        "pago20:RetencionesDR": {
+          "pago20:RetencionDR": {
+            "BaseDR": "23600.000000",
+            "ImporteDR": "944.000000",
+            "ImpuestoDR": "002",
+            "TasaOCuotaDR": "0.040000",
+            "TipoFactorDR": "Tasa"
+          }
+        },
+        "pago20:TrasladosDR": {
+          "pago20:TrasladoDR": {
+            "BaseDR": "23600.000000",
+            "ImporteDR": "3776.000000",
+            "ImpuestoDR": "002",
+            "TasaOCuotaDR": "0.160000",
+            "TipoFactorDR": "Tasa"
+          }
+        }
+      }
+    },
+    {
+      "EquivalenciaDR": "1",
+      "Folio": "18175",
+      "IdDocumento": "DC99A30C-2F8D-4AEF-968E-66C5845CE7CB",
+      "ImpPagado": "26432.00",
+      "ImpSaldoAnt": "26432.00",
+      "ImpSaldoInsoluto": "0.00",
+      "MonedaDR": "MXN",
+      "NumParcialidad": "1",
+      "ObjetoImpDR": "02",
+      "Serie": "CFCP",
+      "pago20:ImpuestosDR": {
+        "pago20:RetencionesDR": {
+          "pago20:RetencionDR": {
+            "BaseDR": "23600.000000",
+            "ImporteDR": "944.000000",
+            "ImpuestoDR": "002",
+            "TasaOCuotaDR": "0.040000",
+            "TipoFactorDR": "Tasa"
+          }
+        },
+        "pago20:TrasladosDR": {
+          "pago20:TrasladoDR": {
+            "BaseDR": "23600.000000",
+            "ImporteDR": "3776.000000",
+            "ImpuestoDR": "002",
+            "TasaOCuotaDR": "0.160000",
+            "TipoFactorDR": "Tasa"
+          }
+        }
+      }
+    },
+    {
+      "EquivalenciaDR": "1",
+      "Folio": "18176",
+      "IdDocumento": "E19F92B0-E44A-4245-9835-22BABBA82895",
+      "ImpPagado": "26432.00",
+      "ImpSaldoAnt": "26432.00",
+      "ImpSaldoInsoluto": "0.00",
+      "MonedaDR": "MXN",
+      "NumParcialidad": "1",
+      "ObjetoImpDR": "02",
+      "Serie": "CFCP",
+      "pago20:ImpuestosDR": {
+        "pago20:RetencionesDR": {
+          "pago20:RetencionDR": {
+            "BaseDR": "23600.000000",
+            "ImporteDR": "944.000000",
+            "ImpuestoDR": "002",
+            "TasaOCuotaDR": "0.040000",
+            "TipoFactorDR": "Tasa"
+          }
+        },
+        "pago20:TrasladosDR": {
+          "pago20:TrasladoDR": {
+            "BaseDR": "23600.000000",
+            "ImporteDR": "3776.000000",
+            "ImpuestoDR": "002",
+            "TasaOCuotaDR": "0.160000",
+            "TipoFactorDR": "Tasa"
+          }
+        }
+      }
+    },
+    {
+      "EquivalenciaDR": "1",
+      "Folio": "18177",
+      "IdDocumento": "88F04BC2-6942-44D9-BEC7-165120C959B0",
+      "ImpPagado": "26432.00",
+      "ImpSaldoAnt": "26432.00",
+      "ImpSaldoInsoluto": "0.00",
+      "MonedaDR": "MXN",
+      "NumParcialidad": "1",
+      "ObjetoImpDR": "02",
+      "Serie": "CFCP",
+      "pago20:ImpuestosDR": {
+        "pago20:RetencionesDR": {
+          "pago20:RetencionDR": {
+            "BaseDR": "23600.000000",
+            "ImporteDR": "944.000000",
+            "ImpuestoDR": "002",
+            "TasaOCuotaDR": "0.040000",
+            "TipoFactorDR": "Tasa"
+          }
+        },
+        "pago20:TrasladosDR": {
+          "pago20:TrasladoDR": {
+            "BaseDR": "23600.000000",
+            "ImporteDR": "3776.000000",
+            "ImpuestoDR": "002",
+            "TasaOCuotaDR": "0.160000",
+            "TipoFactorDR": "Tasa"
+          }
+        }
+      }
+    },
+    {
+      "EquivalenciaDR": "1",
+      "Folio": "18178",
+      "IdDocumento": "C8F96B02-5D50-4784-9801-D101FE69AA33",
+      "ImpPagado": "26432.00",
+      "ImpSaldoAnt": "26432.00",
+      "ImpSaldoInsoluto": "0.00",
+      "MonedaDR": "MXN",
+      "NumParcialidad": "1",
+      "ObjetoImpDR": "02",
+      "Serie": "CFCP",
+      "pago20:ImpuestosDR": {
+        "pago20:RetencionesDR": {
+          "pago20:RetencionDR": {
+            "BaseDR": "23600.000000",
+            "ImporteDR": "944.000000",
+            "ImpuestoDR": "002",
+            "TasaOCuotaDR": "0.040000",
+            "TipoFactorDR": "Tasa"
+          }
+        },
+        "pago20:TrasladosDR": {
+          "pago20:TrasladoDR": {
+            "BaseDR": "23600.000000",
+            "ImporteDR": "3776.000000",
+            "ImpuestoDR": "002",
+            "TasaOCuotaDR": "0.160000",
+            "TipoFactorDR": "Tasa"
+          }
+        }
+      }
+    },
+    {
+      "EquivalenciaDR": "1",
+      "Folio": "18179",
+      "IdDocumento": "9D6B0459-3A4A-47E1-867B-322E0B4D6035",
+      "ImpPagado": "26432.00",
+      "ImpSaldoAnt": "26432.00",
+      "ImpSaldoInsoluto": "0.00",
+      "MonedaDR": "MXN",
+      "NumParcialidad": "1",
+      "ObjetoImpDR": "02",
+      "Serie": "CFCP",
+      "pago20:ImpuestosDR": {
+        "pago20:RetencionesDR": {
+          "pago20:RetencionDR": {
+            "BaseDR": "23600.000000",
+            "ImporteDR": "944.000000",
+            "ImpuestoDR": "002",
+            "TasaOCuotaDR": "0.040000",
+            "TipoFactorDR": "Tasa"
+          }
+        },
+        "pago20:TrasladosDR": {
+          "pago20:TrasladoDR": {
+            "BaseDR": "23600.000000",
+            "ImporteDR": "3776.000000",
+            "ImpuestoDR": "002",
+            "TasaOCuotaDR": "0.160000",
+            "TipoFactorDR": "Tasa"
+          }
+        }
+      }
+    },
+    {
+      "EquivalenciaDR": "1",
+      "Folio": "18181",
+      "IdDocumento": "15DC91F9-614F-490A-947A-FF215FBAAF44",
+      "ImpPagado": "26432.00",
+      "ImpSaldoAnt": "26432.00",
+      "ImpSaldoInsoluto": "0.00",
+      "MonedaDR": "MXN",
+      "NumParcialidad": "1",
+      "ObjetoImpDR": "02",
+      "Serie": "CFCP",
+      "pago20:ImpuestosDR": {
+        "pago20:RetencionesDR": {
+          "pago20:RetencionDR": {
+            "BaseDR": "23600.000000",
+            "ImporteDR": "944.000000",
+            "ImpuestoDR": "002",
+            "TasaOCuotaDR": "0.040000",
+            "TipoFactorDR": "Tasa"
+          }
+        },
+        "pago20:TrasladosDR": {
+          "pago20:TrasladoDR": {
+            "BaseDR": "23600.000000",
+            "ImporteDR": "3776.000000",
+            "ImpuestoDR": "002",
+            "TasaOCuotaDR": "0.160000",
+            "TipoFactorDR": "Tasa"
+          }
+        }
+      }
+    },
+    {
+      "EquivalenciaDR": "1",
+      "Folio": "18182",
+      "IdDocumento": "273A1B4C-D49E-4264-B40F-5BA42A23EB13",
+      "ImpPagado": "26432.00",
+      "ImpSaldoAnt": "26432.00",
+      "ImpSaldoInsoluto": "0.00",
+      "MonedaDR": "MXN",
+      "NumParcialidad": "1",
+      "ObjetoImpDR": "02",
+      "Serie": "CFCP",
+      "pago20:ImpuestosDR": {
+        "pago20:RetencionesDR": {
+          "pago20:RetencionDR": {
+            "BaseDR": "23600.000000",
+            "ImporteDR": "944.000000",
+            "ImpuestoDR": "002",
+            "TasaOCuotaDR": "0.040000",
+            "TipoFactorDR": "Tasa"
+          }
+        },
+        "pago20:TrasladosDR": {
+          "pago20:TrasladoDR": {
+            "BaseDR": "23600.000000",
+            "ImporteDR": "3776.000000",
+            "ImpuestoDR": "002",
+            "TasaOCuotaDR": "0.160000",
+            "TipoFactorDR": "Tasa"
+          }
+        }
+      }
+    },
+    {
+      "EquivalenciaDR": "1",
+      "Folio": "18183",
+      "IdDocumento": "43314B14-0C88-41DC-96D6-8F10DC3E53D5",
+      "ImpPagado": "26432.00",
+      "ImpSaldoAnt": "26432.00",
+      "ImpSaldoInsoluto": "0.00",
+      "MonedaDR": "MXN",
+      "NumParcialidad": "1",
+      "ObjetoImpDR": "02",
+      "Serie": "CFCP",
+      "pago20:ImpuestosDR": {
+        "pago20:RetencionesDR": {
+          "pago20:RetencionDR": {
+            "BaseDR": "23600.000000",
+            "ImporteDR": "944.000000",
+            "ImpuestoDR": "002",
+            "TasaOCuotaDR": "0.040000",
+            "TipoFactorDR": "Tasa"
+          }
+        },
+        "pago20:TrasladosDR": {
+          "pago20:TrasladoDR": {
+            "BaseDR": "23600.000000",
+            "ImporteDR": "3776.000000",
+            "ImpuestoDR": "002",
+            "TasaOCuotaDR": "0.160000",
+            "TipoFactorDR": "Tasa"
+          }
+        }
+      }
+    },
+    {
+      "EquivalenciaDR": "1",
+      "Folio": "18184",
+      "IdDocumento": "DCD3ACED-BF94-4FC4-BE08-28EC81712C9D",
+      "ImpPagado": "26432.00",
+      "ImpSaldoAnt": "26432.00",
+      "ImpSaldoInsoluto": "0.00",
+      "MonedaDR": "MXN",
+      "NumParcialidad": "1",
+      "ObjetoImpDR": "02",
+      "Serie": "CFCP",
+      "pago20:ImpuestosDR": {
+        "pago20:RetencionesDR": {
+          "pago20:RetencionDR": {
+            "BaseDR": "23600.000000",
+            "ImporteDR": "944.000000",
+            "ImpuestoDR": "002",
+            "TasaOCuotaDR": "0.040000",
+            "TipoFactorDR": "Tasa"
+          }
+        },
+        "pago20:TrasladosDR": {
+          "pago20:TrasladoDR": {
+            "BaseDR": "23600.000000",
+            "ImporteDR": "3776.000000",
+            "ImpuestoDR": "002",
+            "TasaOCuotaDR": "0.160000",
+            "TipoFactorDR": "Tasa"
+          }
+        }
+      }
+    },
+    {
+      "EquivalenciaDR": "1",
+      "Folio": "18185",
+      "IdDocumento": "7827DA88-14F3-4B4A-A66D-0EC1284A2608",
+      "ImpPagado": "26432.00",
+      "ImpSaldoAnt": "26432.00",
+      "ImpSaldoInsoluto": "0.00",
+      "MonedaDR": "MXN",
+      "NumParcialidad": "1",
+      "ObjetoImpDR": "02",
+      "Serie": "CFCP",
+      "pago20:ImpuestosDR": {
+        "pago20:RetencionesDR": {
+          "pago20:RetencionDR": {
+            "BaseDR": "23600.000000",
+            "ImporteDR": "944.000000",
+            "ImpuestoDR": "002",
+            "TasaOCuotaDR": "0.040000",
+            "TipoFactorDR": "Tasa"
+          }
+        },
+        "pago20:TrasladosDR": {
+          "pago20:TrasladoDR": {
+            "BaseDR": "23600.000000",
+            "ImporteDR": "3776.000000",
+            "ImpuestoDR": "002",
+            "TasaOCuotaDR": "0.160000",
+            "TipoFactorDR": "Tasa"
+          }
+        }
+      }
+    },
+    {
+      "EquivalenciaDR": "1",
+      "Folio": "18186",
+      "IdDocumento": "67EDB56F-34E1-4A9F-A818-1F6C887F9D02",
+      "ImpPagado": "14380.80",
+      "ImpSaldoAnt": "14380.80",
+      "ImpSaldoInsoluto": "0.00",
+      "MonedaDR": "MXN",
+      "NumParcialidad": "1",
+      "ObjetoImpDR": "02",
+      "Serie": "CFCP",
+      "pago20:ImpuestosDR": {
+        "pago20:RetencionesDR": {
+          "pago20:RetencionDR": {
+            "BaseDR": "12840.000000",
+            "ImporteDR": "513.600000",
+            "ImpuestoDR": "002",
+            "TasaOCuotaDR": "0.040000",
+            "TipoFactorDR": "Tasa"
+          }
+        },
+        "pago20:TrasladosDR": {
+          "pago20:TrasladoDR": {
+            "BaseDR": "12840.000000",
+            "ImporteDR": "2054.400000",
+            "ImpuestoDR": "002",
+            "TasaOCuotaDR": "0.160000",
+            "TipoFactorDR": "Tasa"
+          }
+        }
+      }
+    },
+    {
+      "EquivalenciaDR": "1",
+      "Folio": "18187",
+      "IdDocumento": "B016341B-1FF2-437D-AE50-35FAA0C6FA54",
+      "ImpPagado": "14380.80",
+      "ImpSaldoAnt": "14380.80",
+      "ImpSaldoInsoluto": "0.00",
+      "MonedaDR": "MXN",
+      "NumParcialidad": "1",
+      "ObjetoImpDR": "02",
+      "Serie": "CFCP",
+      "pago20:ImpuestosDR": {
+        "pago20:RetencionesDR": {
+          "pago20:RetencionDR": {
+            "BaseDR": "12840.000000",
+            "ImporteDR": "513.600000",
+            "ImpuestoDR": "002",
+            "TasaOCuotaDR": "0.040000",
+            "TipoFactorDR": "Tasa"
+          }
+        },
+        "pago20:TrasladosDR": {
+          "pago20:TrasladoDR": {
+            "BaseDR": "12840.000000",
+            "ImporteDR": "2054.400000",
+            "ImpuestoDR": "002",
+            "TasaOCuotaDR": "0.160000",
+            "TipoFactorDR": "Tasa"
+          }
+        }
+      }
+    },
+    {
+      "EquivalenciaDR": "1",
+      "Folio": "18188",
+      "IdDocumento": "A65F5014-25C1-40D5-965B-67BD533A788C",
+      "ImpPagado": "14380.80",
+      "ImpSaldoAnt": "14380.80",
+      "ImpSaldoInsoluto": "0.00",
+      "MonedaDR": "MXN",
+      "NumParcialidad": "1",
+      "ObjetoImpDR": "02",
+      "Serie": "CFCP",
+      "pago20:ImpuestosDR": {
+        "pago20:RetencionesDR": {
+          "pago20:RetencionDR": {
+            "BaseDR": "12840.000000",
+            "ImporteDR": "513.600000",
+            "ImpuestoDR": "002",
+            "TasaOCuotaDR": "0.040000",
+            "TipoFactorDR": "Tasa"
+          }
+        },
+        "pago20:TrasladosDR": {
+          "pago20:TrasladoDR": {
+            "BaseDR": "12840.000000",
+            "ImporteDR": "2054.400000",
+            "ImpuestoDR": "002",
+            "TasaOCuotaDR": "0.160000",
+            "TipoFactorDR": "Tasa"
+          }
+        }
+      }
+    },
+    {
+      "EquivalenciaDR": "1",
+      "Folio": "18189",
+      "IdDocumento": "751787CC-CC0C-4D77-9F1E-F6AA01AFDFF9",
+      "ImpPagado": "14380.80",
+      "ImpSaldoAnt": "14380.80",
+      "ImpSaldoInsoluto": "0.00",
+      "MonedaDR": "MXN",
+      "NumParcialidad": "1",
+      "ObjetoImpDR": "02",
+      "Serie": "CFCP",
+      "pago20:ImpuestosDR": {
+        "pago20:RetencionesDR": {
+          "pago20:RetencionDR": {
+            "BaseDR": "12840.000000",
+            "ImporteDR": "513.600000",
+            "ImpuestoDR": "002",
+            "TasaOCuotaDR": "0.040000",
+            "TipoFactorDR": "Tasa"
+          }
+        },
+        "pago20:TrasladosDR": {
+          "pago20:TrasladoDR": {
+            "BaseDR": "12840.000000",
+            "ImporteDR": "2054.400000",
+            "ImpuestoDR": "002",
+            "TasaOCuotaDR": "0.160000",
+            "TipoFactorDR": "Tasa"
+          }
+        }
+      }
+    },
+    {
+      "EquivalenciaDR": "1",
+      "Folio": "18190",
+      "IdDocumento": "3887F516-1390-4D24-B17D-1C557A584ECF",
+      "ImpPagado": "14380.80",
+      "ImpSaldoAnt": "14380.80",
+      "ImpSaldoInsoluto": "0.00",
+      "MonedaDR": "MXN",
+      "NumParcialidad": "1",
+      "ObjetoImpDR": "02",
+      "Serie": "CFCP",
+      "pago20:ImpuestosDR": {
+        "pago20:RetencionesDR": {
+          "pago20:RetencionDR": {
+            "BaseDR": "12840.000000",
+            "ImporteDR": "513.600000",
+            "ImpuestoDR": "002",
+            "TasaOCuotaDR": "0.040000",
+            "TipoFactorDR": "Tasa"
+          }
+        },
+        "pago20:TrasladosDR": {
+          "pago20:TrasladoDR": {
+            "BaseDR": "12840.000000",
+            "ImporteDR": "2054.400000",
+            "ImpuestoDR": "002",
+            "TasaOCuotaDR": "0.160000",
+            "TipoFactorDR": "Tasa"
+          }
+        }
+      }
+    },
+    {
+      "EquivalenciaDR": "1",
+      "Folio": "18191",
+      "IdDocumento": "960B0C8C-8AE3-4B1A-8C1B-3505AA8A7745",
+      "ImpPagado": "14380.80",
+      "ImpSaldoAnt": "14380.80",
+      "ImpSaldoInsoluto": "0.00",
+      "MonedaDR": "MXN",
+      "NumParcialidad": "1",
+      "ObjetoImpDR": "02",
+      "Serie": "CFCP",
+      "pago20:ImpuestosDR": {
+        "pago20:RetencionesDR": {
+          "pago20:RetencionDR": {
+            "BaseDR": "12840.000000",
+            "ImporteDR": "513.600000",
+            "ImpuestoDR": "002",
+            "TasaOCuotaDR": "0.040000",
+            "TipoFactorDR": "Tasa"
+          }
+        },
+        "pago20:TrasladosDR": {
+          "pago20:TrasladoDR": {
+            "BaseDR": "12840.000000",
+            "ImporteDR": "2054.400000",
+            "ImpuestoDR": "002",
+            "TasaOCuotaDR": "0.160000",
+            "TipoFactorDR": "Tasa"
+          }
+        }
+      }
+    },
+    {
+      "EquivalenciaDR": "1",
+      "Folio": "18192",
+      "IdDocumento": "CA0072BF-5722-4C9D-9B19-87B9F91695D0",
+      "ImpPagado": "14380.80",
+      "ImpSaldoAnt": "14380.80",
+      "ImpSaldoInsoluto": "0.00",
+      "MonedaDR": "MXN",
+      "NumParcialidad": "1",
+      "ObjetoImpDR": "02",
+      "Serie": "CFCP",
+      "pago20:ImpuestosDR": {
+        "pago20:RetencionesDR": {
+          "pago20:RetencionDR": {
+            "BaseDR": "12840.000000",
+            "ImporteDR": "513.600000",
+            "ImpuestoDR": "002",
+            "TasaOCuotaDR": "0.040000",
+            "TipoFactorDR": "Tasa"
+          }
+        },
+        "pago20:TrasladosDR": {
+          "pago20:TrasladoDR": {
+            "BaseDR": "12840.000000",
+            "ImporteDR": "2054.400000",
+            "ImpuestoDR": "002",
+            "TasaOCuotaDR": "0.160000",
+            "TipoFactorDR": "Tasa"
+          }
+        }
+      }
+    },
+    {
+      "EquivalenciaDR": "1",
+      "Folio": "18193",
+      "IdDocumento": "2680DC9F-F0F3-431C-93A5-11B8A22F7E39",
+      "ImpPagado": "26432.00",
+      "ImpSaldoAnt": "26432.00",
+      "ImpSaldoInsoluto": "0.00",
+      "MonedaDR": "MXN",
+      "NumParcialidad": "1",
+      "ObjetoImpDR": "02",
+      "Serie": "CFCP",
+      "pago20:ImpuestosDR": {
+        "pago20:RetencionesDR": {
+          "pago20:RetencionDR": {
+            "BaseDR": "23600.000000",
+            "ImporteDR": "944.000000",
+            "ImpuestoDR": "002",
+            "TasaOCuotaDR": "0.040000",
+            "TipoFactorDR": "Tasa"
+          }
+        },
+        "pago20:TrasladosDR": {
+          "pago20:TrasladoDR": {
+            "BaseDR": "23600.000000",
+            "ImporteDR": "3776.000000",
+            "ImpuestoDR": "002",
+            "TasaOCuotaDR": "0.160000",
+            "TipoFactorDR": "Tasa"
+          }
+        }
+      }
+    },
+    {
+      "EquivalenciaDR": "1",
+      "Folio": "18194",
+      "IdDocumento": "E8EF532B-DC92-43E5-B2ED-CC674CFD912D",
+      "ImpPagado": "26432.00",
+      "ImpSaldoAnt": "26432.00",
+      "ImpSaldoInsoluto": "0.00",
+      "MonedaDR": "MXN",
+      "NumParcialidad": "1",
+      "ObjetoImpDR": "02",
+      "Serie": "CFCP",
+      "pago20:ImpuestosDR": {
+        "pago20:RetencionesDR": {
+          "pago20:RetencionDR": {
+            "BaseDR": "23600.000000",
+            "ImporteDR": "944.000000",
+            "ImpuestoDR": "002",
+            "TasaOCuotaDR": "0.040000",
+            "TipoFactorDR": "Tasa"
+          }
+        },
+        "pago20:TrasladosDR": {
+          "pago20:TrasladoDR": {
+            "BaseDR": "23600.000000",
+            "ImporteDR": "3776.000000",
+            "ImpuestoDR": "002",
+            "TasaOCuotaDR": "0.160000",
+            "TipoFactorDR": "Tasa"
+          }
+        }
+      }
+    },
+    {
+      "EquivalenciaDR": "1",
+      "Folio": "18202",
+      "IdDocumento": "D6F0F534-0CC1-432E-8FCA-708CFBA01B99",
+      "ImpPagado": "26432.00",
+      "ImpSaldoAnt": "26432.00",
+      "ImpSaldoInsoluto": "0.00",
+      "MonedaDR": "MXN",
+      "NumParcialidad": "1",
+      "ObjetoImpDR": "02",
+      "Serie": "CFCP",
+      "pago20:ImpuestosDR": {
+        "pago20:RetencionesDR": {
+          "pago20:RetencionDR": {
+            "BaseDR": "23600.000000",
+            "ImporteDR": "944.000000",
+            "ImpuestoDR": "002",
+            "TasaOCuotaDR": "0.040000",
+            "TipoFactorDR": "Tasa"
+          }
+        },
+        "pago20:TrasladosDR": {
+          "pago20:TrasladoDR": {
+            "BaseDR": "23600.000000",
+            "ImporteDR": "3776.000000",
+            "ImpuestoDR": "002",
+            "TasaOCuotaDR": "0.160000",
+            "TipoFactorDR": "Tasa"
+          }
+        }
+      }
+    },
+    {
+      "EquivalenciaDR": "1",
+      "Folio": "18203",
+      "IdDocumento": "2D585B37-AF55-4BAF-9F62-8CD1474B450C",
+      "ImpPagado": "26432.00",
+      "ImpSaldoAnt": "26432.00",
+      "ImpSaldoInsoluto": "0.00",
+      "MonedaDR": "MXN",
+      "NumParcialidad": "1",
+      "ObjetoImpDR": "02",
+      "Serie": "CFCP",
+      "pago20:ImpuestosDR": {
+        "pago20:RetencionesDR": {
+          "pago20:RetencionDR": {
+            "BaseDR": "23600.000000",
+            "ImporteDR": "944.000000",
+            "ImpuestoDR": "002",
+            "TasaOCuotaDR": "0.040000",
+            "TipoFactorDR": "Tasa"
+          }
+        },
+        "pago20:TrasladosDR": {
+          "pago20:TrasladoDR": {
+            "BaseDR": "23600.000000",
+            "ImporteDR": "3776.000000",
+            "ImpuestoDR": "002",
+            "TasaOCuotaDR": "0.160000",
+            "TipoFactorDR": "Tasa"
+          }
+        }
+      }
+    },
+    {
+      "EquivalenciaDR": "1",
+      "Folio": "18205",
+      "IdDocumento": "497C1563-BB28-45EB-99E1-91C0383E229C",
+      "ImpPagado": "26432.00",
+      "ImpSaldoAnt": "26432.00",
+      "ImpSaldoInsoluto": "0.00",
+      "MonedaDR": "MXN",
+      "NumParcialidad": "1",
+      "ObjetoImpDR": "02",
+      "Serie": "CFCP",
+      "pago20:ImpuestosDR": {
+        "pago20:RetencionesDR": {
+          "pago20:RetencionDR": {
+            "BaseDR": "23600.000000",
+            "ImporteDR": "944.000000",
+            "ImpuestoDR": "002",
+            "TasaOCuotaDR": "0.040000",
+            "TipoFactorDR": "Tasa"
+          }
+        },
+        "pago20:TrasladosDR": {
+          "pago20:TrasladoDR": {
+            "BaseDR": "23600.000000",
+            "ImporteDR": "3776.000000",
+            "ImpuestoDR": "002",
+            "TasaOCuotaDR": "0.160000",
+            "TipoFactorDR": "Tasa"
+          }
+        }
+      }
+    },
+    {
+      "EquivalenciaDR": "1",
+      "Folio": "18206",
+      "IdDocumento": "2AE0B21A-44C6-431A-869F-4016C9A6CA8B",
+      "ImpPagado": "26432.00",
+      "ImpSaldoAnt": "26432.00",
+      "ImpSaldoInsoluto": "0.00",
+      "MonedaDR": "MXN",
+      "NumParcialidad": "1",
+      "ObjetoImpDR": "02",
+      "Serie": "CFCP",
+      "pago20:ImpuestosDR": {
+        "pago20:RetencionesDR": {
+          "pago20:RetencionDR": {
+            "BaseDR": "23600.000000",
+            "ImporteDR": "944.000000",
+            "ImpuestoDR": "002",
+            "TasaOCuotaDR": "0.040000",
+            "TipoFactorDR": "Tasa"
+          }
+        },
+        "pago20:TrasladosDR": {
+          "pago20:TrasladoDR": {
+            "BaseDR": "23600.000000",
+            "ImporteDR": "3776.000000",
+            "ImpuestoDR": "002",
+            "TasaOCuotaDR": "0.160000",
+            "TipoFactorDR": "Tasa"
+          }
+        }
+      }
+    },
+    {
+      "EquivalenciaDR": "1",
+      "Folio": "18208",
+      "IdDocumento": "9632D818-D8F5-4C3B-BA17-7E4A9CE584F6",
+      "ImpPagado": "26432.00",
+      "ImpSaldoAnt": "26432.00",
+      "ImpSaldoInsoluto": "0.00",
+      "MonedaDR": "MXN",
+      "NumParcialidad": "1",
+      "ObjetoImpDR": "02",
+      "Serie": "CFCP",
+      "pago20:ImpuestosDR": {
+        "pago20:RetencionesDR": {
+          "pago20:RetencionDR": {
+            "BaseDR": "23600.000000",
+            "ImporteDR": "944.000000",
+            "ImpuestoDR": "002",
+            "TasaOCuotaDR": "0.040000",
+            "TipoFactorDR": "Tasa"
+          }
+        },
+        "pago20:TrasladosDR": {
+          "pago20:TrasladoDR": {
+            "BaseDR": "23600.000000",
+            "ImporteDR": "3776.000000",
+            "ImpuestoDR": "002",
+            "TasaOCuotaDR": "0.160000",
+            "TipoFactorDR": "Tasa"
+          }
+        }
+      }
+    },
+    {
+      "EquivalenciaDR": "1",
+      "Folio": "18209",
+      "IdDocumento": "EDC0AE5A-EC59-4218-B72F-2E1905CC3DC3",
+      "ImpPagado": "26432.00",
+      "ImpSaldoAnt": "26432.00",
+      "ImpSaldoInsoluto": "0.00",
+      "MonedaDR": "MXN",
+      "NumParcialidad": "1",
+      "ObjetoImpDR": "02",
+      "Serie": "CFCP",
+      "pago20:ImpuestosDR": {
+        "pago20:RetencionesDR": {
+          "pago20:RetencionDR": {
+            "BaseDR": "23600.000000",
+            "ImporteDR": "944.000000",
+            "ImpuestoDR": "002",
+            "TasaOCuotaDR": "0.040000",
+            "TipoFactorDR": "Tasa"
+          }
+        },
+        "pago20:TrasladosDR": {
+          "pago20:TrasladoDR": {
+            "BaseDR": "23600.000000",
+            "ImporteDR": "3776.000000",
+            "ImpuestoDR": "002",
+            "TasaOCuotaDR": "0.160000",
+            "TipoFactorDR": "Tasa"
+          }
+        }
+      }
+    },
+    {
+      "EquivalenciaDR": "1",
+      "Folio": "18210",
+      "IdDocumento": "410B53BD-EBC1-474A-A403-7F87EBD0685F",
+      "ImpPagado": "26432.00",
+      "ImpSaldoAnt": "26432.00",
+      "ImpSaldoInsoluto": "0.00",
+      "MonedaDR": "MXN",
+      "NumParcialidad": "1",
+      "ObjetoImpDR": "02",
+      "Serie": "CFCP",
+      "pago20:ImpuestosDR": {
+        "pago20:RetencionesDR": {
+          "pago20:RetencionDR": {
+            "BaseDR": "23600.000000",
+            "ImporteDR": "944.000000",
+            "ImpuestoDR": "002",
+            "TasaOCuotaDR": "0.040000",
+            "TipoFactorDR": "Tasa"
+          }
+        },
+        "pago20:TrasladosDR": {
+          "pago20:TrasladoDR": {
+            "BaseDR": "23600.000000",
+            "ImporteDR": "3776.000000",
+            "ImpuestoDR": "002",
+            "TasaOCuotaDR": "0.160000",
+            "TipoFactorDR": "Tasa"
+          }
+        }
+      }
+    },
+    {
+      "EquivalenciaDR": "1",
+      "Folio": "18213",
+      "IdDocumento": "55C11BC1-4863-467B-B2A9-9FD4F8E296AA",
+      "ImpPagado": "26432.00",
+      "ImpSaldoAnt": "26432.00",
+      "ImpSaldoInsoluto": "0.00",
+      "MonedaDR": "MXN",
+      "NumParcialidad": "1",
+      "ObjetoImpDR": "02",
+      "Serie": "CFCP",
+      "pago20:ImpuestosDR": {
+        "pago20:RetencionesDR": {
+          "pago20:RetencionDR": {
+            "BaseDR": "23600.000000",
+            "ImporteDR": "944.000000",
+            "ImpuestoDR": "002",
+            "TasaOCuotaDR": "0.040000",
+            "TipoFactorDR": "Tasa"
+          }
+        },
+        "pago20:TrasladosDR": {
+          "pago20:TrasladoDR": {
+            "BaseDR": "23600.000000",
+            "ImporteDR": "3776.000000",
+            "ImpuestoDR": "002",
+            "TasaOCuotaDR": "0.160000",
+            "TipoFactorDR": "Tasa"
+          }
+        }
+      }
+    },
+    {
+      "EquivalenciaDR": "1",
+      "Folio": "18214",
+      "IdDocumento": "E6BC0932-5D94-4EE8-B905-C4A5EACF286C",
+      "ImpPagado": "26432.00",
+      "ImpSaldoAnt": "26432.00",
+      "ImpSaldoInsoluto": "0.00",
+      "MonedaDR": "MXN",
+      "NumParcialidad": "1",
+      "ObjetoImpDR": "02",
+      "Serie": "CFCP",
+      "pago20:ImpuestosDR": {
+        "pago20:RetencionesDR": {
+          "pago20:RetencionDR": {
+            "BaseDR": "23600.000000",
+            "ImporteDR": "944.000000",
+            "ImpuestoDR": "002",
+            "TasaOCuotaDR": "0.040000",
+            "TipoFactorDR": "Tasa"
+          }
+        },
+        "pago20:TrasladosDR": {
+          "pago20:TrasladoDR": {
+            "BaseDR": "23600.000000",
+            "ImporteDR": "3776.000000",
+            "ImpuestoDR": "002",
+            "TasaOCuotaDR": "0.160000",
+            "TipoFactorDR": "Tasa"
+          }
+        }
+      }
+    },
+    {
+      "EquivalenciaDR": "1",
+      "Folio": "18216",
+      "IdDocumento": "44EB3DF7-09AE-4B1F-8F3D-E8CA47D49D16",
+      "ImpPagado": "26432.00",
+      "ImpSaldoAnt": "26432.00",
+      "ImpSaldoInsoluto": "0.00",
+      "MonedaDR": "MXN",
+      "NumParcialidad": "1",
+      "ObjetoImpDR": "02",
+      "Serie": "CFCP",
+      "pago20:ImpuestosDR": {
+        "pago20:RetencionesDR": {
+          "pago20:RetencionDR": {
+            "BaseDR": "23600.000000",
+            "ImporteDR": "944.000000",
+            "ImpuestoDR": "002",
+            "TasaOCuotaDR": "0.040000",
+            "TipoFactorDR": "Tasa"
+          }
+        },
+        "pago20:TrasladosDR": {
+          "pago20:TrasladoDR": {
+            "BaseDR": "23600.000000",
+            "ImporteDR": "3776.000000",
+            "ImpuestoDR": "002",
+            "TasaOCuotaDR": "0.160000",
+            "TipoFactorDR": "Tasa"
+          }
+        }
+      }
+    },
+    {
+      "EquivalenciaDR": "1",
+      "Folio": "18219",
+      "IdDocumento": "2495F60D-4CAA-491B-B160-C9ADD5221925",
+      "ImpPagado": "26432.00",
+      "ImpSaldoAnt": "26432.00",
+      "ImpSaldoInsoluto": "0.00",
+      "MonedaDR": "MXN",
+      "NumParcialidad": "1",
+      "ObjetoImpDR": "02",
+      "Serie": "CFCP",
+      "pago20:ImpuestosDR": {
+        "pago20:RetencionesDR": {
+          "pago20:RetencionDR": {
+            "BaseDR": "23600.000000",
+            "ImporteDR": "944.000000",
+            "ImpuestoDR": "002",
+            "TasaOCuotaDR": "0.040000",
+            "TipoFactorDR": "Tasa"
+          }
+        },
+        "pago20:TrasladosDR": {
+          "pago20:TrasladoDR": {
+            "BaseDR": "23600.000000",
+            "ImporteDR": "3776.000000",
+            "ImpuestoDR": "002",
+            "TasaOCuotaDR": "0.160000",
+            "TipoFactorDR": "Tasa"
+          }
+        }
+      }
+    },
+    {
+      "EquivalenciaDR": "1",
+      "Folio": "18220",
+      "IdDocumento": "0EBD2A48-06AE-4D6D-9EF3-1E8125B4E321",
+      "ImpPagado": "26432.00",
+      "ImpSaldoAnt": "26432.00",
+      "ImpSaldoInsoluto": "0.00",
+      "MonedaDR": "MXN",
+      "NumParcialidad": "1",
+      "ObjetoImpDR": "02",
+      "Serie": "CFCP",
+      "pago20:ImpuestosDR": {
+        "pago20:RetencionesDR": {
+          "pago20:RetencionDR": {
+            "BaseDR": "23600.000000",
+            "ImporteDR": "944.000000",
+            "ImpuestoDR": "002",
+            "TasaOCuotaDR": "0.040000",
+            "TipoFactorDR": "Tasa"
+          }
+        },
+        "pago20:TrasladosDR": {
+          "pago20:TrasladoDR": {
+            "BaseDR": "23600.000000",
+            "ImporteDR": "3776.000000",
+            "ImpuestoDR": "002",
+            "TasaOCuotaDR": "0.160000",
+            "TipoFactorDR": "Tasa"
+          }
+        }
+      }
+    },
+    {
+      "EquivalenciaDR": "1",
+      "Folio": "18221",
+      "IdDocumento": "28DDCFFC-DF9C-456F-8888-3A6938FFC162",
+      "ImpPagado": "26432.00",
+      "ImpSaldoAnt": "26432.00",
+      "ImpSaldoInsoluto": "0.00",
+      "MonedaDR": "MXN",
+      "NumParcialidad": "1",
+      "ObjetoImpDR": "02",
+      "Serie": "CFCP",
+      "pago20:ImpuestosDR": {
+        "pago20:RetencionesDR": {
+          "pago20:RetencionDR": {
+            "BaseDR": "23600.000000",
+            "ImporteDR": "944.000000",
+            "ImpuestoDR": "002",
+            "TasaOCuotaDR": "0.040000",
+            "TipoFactorDR": "Tasa"
+          }
+        },
+        "pago20:TrasladosDR": {
+          "pago20:TrasladoDR": {
+            "BaseDR": "23600.000000",
+            "ImporteDR": "3776.000000",
+            "ImpuestoDR": "002",
+            "TasaOCuotaDR": "0.160000",
+            "TipoFactorDR": "Tasa"
+          }
+        }
+      }
+    },
+    {
+      "EquivalenciaDR": "1",
+      "Folio": "18222",
+      "IdDocumento": "D50D13C3-358E-4059-BF11-0D04E4903ABC",
+      "ImpPagado": "26432.00",
+      "ImpSaldoAnt": "26432.00",
+      "ImpSaldoInsoluto": "0.00",
+      "MonedaDR": "MXN",
+      "NumParcialidad": "1",
+      "ObjetoImpDR": "02",
+      "Serie": "CFCP",
+      "pago20:ImpuestosDR": {
+        "pago20:RetencionesDR": {
+          "pago20:RetencionDR": {
+            "BaseDR": "23600.000000",
+            "ImporteDR": "944.000000",
+            "ImpuestoDR": "002",
+            "TasaOCuotaDR": "0.040000",
+            "TipoFactorDR": "Tasa"
+          }
+        },
+        "pago20:TrasladosDR": {
+          "pago20:TrasladoDR": {
+            "BaseDR": "23600.000000",
+            "ImporteDR": "3776.000000",
+            "ImpuestoDR": "002",
+            "TasaOCuotaDR": "0.160000",
+            "TipoFactorDR": "Tasa"
+          }
+        }
+      }
+    },
+    {
+      "EquivalenciaDR": "1",
+      "Folio": "18224",
+      "IdDocumento": "45A16950-688D-4E39-8F51-33795BFA4F8E",
+      "ImpPagado": "26432.00",
+      "ImpSaldoAnt": "26432.00",
+      "ImpSaldoInsoluto": "0.00",
+      "MonedaDR": "MXN",
+      "NumParcialidad": "1",
+      "ObjetoImpDR": "02",
+      "Serie": "CFCP",
+      "pago20:ImpuestosDR": {
+        "pago20:RetencionesDR": {
+          "pago20:RetencionDR": {
+            "BaseDR": "23600.000000",
+            "ImporteDR": "944.000000",
+            "ImpuestoDR": "002",
+            "TasaOCuotaDR": "0.040000",
+            "TipoFactorDR": "Tasa"
+          }
+        },
+        "pago20:TrasladosDR": {
+          "pago20:TrasladoDR": {
+            "BaseDR": "23600.000000",
+            "ImporteDR": "3776.000000",
+            "ImpuestoDR": "002",
+            "TasaOCuotaDR": "0.160000",
+            "TipoFactorDR": "Tasa"
+          }
+        }
+      }
+    },
+    {
+      "EquivalenciaDR": "1",
+      "Folio": "18226",
+      "IdDocumento": "01BEF432-817B-43A7-9DED-77A46158BEA2",
+      "ImpPagado": "26432.00",
+      "ImpSaldoAnt": "26432.00",
+      "ImpSaldoInsoluto": "0.00",
+      "MonedaDR": "MXN",
+      "NumParcialidad": "1",
+      "ObjetoImpDR": "02",
+      "Serie": "CFCP",
+      "pago20:ImpuestosDR": {
+        "pago20:RetencionesDR": {
+          "pago20:RetencionDR": {
+            "BaseDR": "23600.000000",
+            "ImporteDR": "944.000000",
+            "ImpuestoDR": "002",
+            "TasaOCuotaDR": "0.040000",
+            "TipoFactorDR": "Tasa"
+          }
+        },
+        "pago20:TrasladosDR": {
+          "pago20:TrasladoDR": {
+            "BaseDR": "23600.000000",
+            "ImporteDR": "3776.000000",
+            "ImpuestoDR": "002",
+            "TasaOCuotaDR": "0.160000",
+            "TipoFactorDR": "Tasa"
+          }
+        }
+      }
+    },
+    {
+      "EquivalenciaDR": "1",
+      "Folio": "18228",
+      "IdDocumento": "BA05D0D3-1368-411E-BABD-D44FCE69E74C",
+      "ImpPagado": "26432.00",
+      "ImpSaldoAnt": "26432.00",
+      "ImpSaldoInsoluto": "0.00",
+      "MonedaDR": "MXN",
+      "NumParcialidad": "1",
+      "ObjetoImpDR": "02",
+      "Serie": "CFCP",
+      "pago20:ImpuestosDR": {
+        "pago20:RetencionesDR": {
+          "pago20:RetencionDR": {
+            "BaseDR": "23600.000000",
+            "ImporteDR": "944.000000",
+            "ImpuestoDR": "002",
+            "TasaOCuotaDR": "0.040000",
+            "TipoFactorDR": "Tasa"
+          }
+        },
+        "pago20:TrasladosDR": {
+          "pago20:TrasladoDR": {
+            "BaseDR": "23600.000000",
+            "ImporteDR": "3776.000000",
+            "ImpuestoDR": "002",
+            "TasaOCuotaDR": "0.160000",
+            "TipoFactorDR": "Tasa"
+          }
+        }
+      }
+    },
+    {
+      "EquivalenciaDR": "1",
+      "Folio": "18229",
+      "IdDocumento": "EE0BB084-FBAE-40C9-A607-ECD44475B14D",
+      "ImpPagado": "26432.00",
+      "ImpSaldoAnt": "26432.00",
+      "ImpSaldoInsoluto": "0.00",
+      "MonedaDR": "MXN",
+      "NumParcialidad": "1",
+      "ObjetoImpDR": "02",
+      "Serie": "CFCP",
+      "pago20:ImpuestosDR": {
+        "pago20:RetencionesDR": {
+          "pago20:RetencionDR": {
+            "BaseDR": "23600.000000",
+            "ImporteDR": "944.000000",
+            "ImpuestoDR": "002",
+            "TasaOCuotaDR": "0.040000",
+            "TipoFactorDR": "Tasa"
+          }
+        },
+        "pago20:TrasladosDR": {
+          "pago20:TrasladoDR": {
+            "BaseDR": "23600.000000",
+            "ImporteDR": "3776.000000",
+            "ImpuestoDR": "002",
+            "TasaOCuotaDR": "0.160000",
+            "TipoFactorDR": "Tasa"
+          }
+        }
+      }
+    },
+    {
+      "EquivalenciaDR": "1",
+      "Folio": "18230",
+      "IdDocumento": "742CAB0A-1E4C-4B3E-AAF0-E653BB9D4713",
+      "ImpPagado": "43008.00",
+      "ImpSaldoAnt": "43008.00",
+      "ImpSaldoInsoluto": "0.00",
+      "MonedaDR": "MXN",
+      "NumParcialidad": "1",
+      "ObjetoImpDR": "02",
+      "Serie": "CFCP",
+      "pago20:ImpuestosDR": {
+        "pago20:RetencionesDR": {
+          "pago20:RetencionDR": {
+            "BaseDR": "38400.000000",
+            "ImporteDR": "1536.000000",
+            "ImpuestoDR": "002",
+            "TasaOCuotaDR": "0.040000",
+            "TipoFactorDR": "Tasa"
+          }
+        },
+        "pago20:TrasladosDR": {
+          "pago20:TrasladoDR": {
+            "BaseDR": "38400.000000",
+            "ImporteDR": "6144.000000",
+            "ImpuestoDR": "002",
+            "TasaOCuotaDR": "0.160000",
+            "TipoFactorDR": "Tasa"
+          }
+        }
+      }
+    },
+    {
+      "EquivalenciaDR": "1",
+      "Folio": "18231",
+      "IdDocumento": "D92301D1-1684-496C-AB5A-0226C6380ACE",
+      "ImpPagado": "26432.00",
+      "ImpSaldoAnt": "26432.00",
+      "ImpSaldoInsoluto": "0.00",
+      "MonedaDR": "MXN",
+      "NumParcialidad": "1",
+      "ObjetoImpDR": "02",
+      "Serie": "CFCP",
+      "pago20:ImpuestosDR": {
+        "pago20:RetencionesDR": {
+          "pago20:RetencionDR": {
+            "BaseDR": "23600.000000",
+            "ImporteDR": "944.000000",
+            "ImpuestoDR": "002",
+            "TasaOCuotaDR": "0.040000",
+            "TipoFactorDR": "Tasa"
+          }
+        },
+        "pago20:TrasladosDR": {
+          "pago20:TrasladoDR": {
+            "BaseDR": "23600.000000",
+            "ImporteDR": "3776.000000",
+            "ImpuestoDR": "002",
+            "TasaOCuotaDR": "0.160000",
+            "TipoFactorDR": "Tasa"
+          }
+        }
+      }
+    },
+    {
+      "EquivalenciaDR": "1",
+      "Folio": "18232",
+      "IdDocumento": "D56B1FB0-D31D-42B5-BE5D-891080A4BFDA",
+      "ImpPagado": "43008.00",
+      "ImpSaldoAnt": "43008.00",
+      "ImpSaldoInsoluto": "0.00",
+      "MonedaDR": "MXN",
+      "NumParcialidad": "1",
+      "ObjetoImpDR": "02",
+      "Serie": "CFCP",
+      "pago20:ImpuestosDR": {
+        "pago20:RetencionesDR": {
+          "pago20:RetencionDR": {
+            "BaseDR": "38400.000000",
+            "ImporteDR": "1536.000000",
+            "ImpuestoDR": "002",
+            "TasaOCuotaDR": "0.040000",
+            "TipoFactorDR": "Tasa"
+          }
+        },
+        "pago20:TrasladosDR": {
+          "pago20:TrasladoDR": {
+            "BaseDR": "38400.000000",
+            "ImporteDR": "6144.000000",
+            "ImpuestoDR": "002",
+            "TasaOCuotaDR": "0.160000",
+            "TipoFactorDR": "Tasa"
+          }
+        }
+      }
+    },
+    {
+      "EquivalenciaDR": "1",
+      "Folio": "18233",
+      "IdDocumento": "D4B5ACF4-DAF8-40AE-A4CC-335AF27373F3",
+      "ImpPagado": "26432.00",
+      "ImpSaldoAnt": "26432.00",
+      "ImpSaldoInsoluto": "0.00",
+      "MonedaDR": "MXN",
+      "NumParcialidad": "1",
+      "ObjetoImpDR": "02",
+      "Serie": "CFCP",
+      "pago20:ImpuestosDR": {
+        "pago20:RetencionesDR": {
+          "pago20:RetencionDR": {
+            "BaseDR": "23600.000000",
+            "ImporteDR": "944.000000",
+            "ImpuestoDR": "002",
+            "TasaOCuotaDR": "0.040000",
+            "TipoFactorDR": "Tasa"
+          }
+        },
+        "pago20:TrasladosDR": {
+          "pago20:TrasladoDR": {
+            "BaseDR": "23600.000000",
+            "ImporteDR": "3776.000000",
+            "ImpuestoDR": "002",
+            "TasaOCuotaDR": "0.160000",
+            "TipoFactorDR": "Tasa"
+          }
+        }
+      }
+    },
+    {
+      "EquivalenciaDR": "1",
+      "Folio": "18234",
+      "IdDocumento": "1ABC2429-12C8-4168-81A0-D8D8AC3A8B1E",
+      "ImpPagado": "26432.00",
+      "ImpSaldoAnt": "26432.00",
+      "ImpSaldoInsoluto": "0.00",
+      "MonedaDR": "MXN",
+      "NumParcialidad": "1",
+      "ObjetoImpDR": "02",
+      "Serie": "CFCP",
+      "pago20:ImpuestosDR": {
+        "pago20:RetencionesDR": {
+          "pago20:RetencionDR": {
+            "BaseDR": "23600.000000",
+            "ImporteDR": "944.000000",
+            "ImpuestoDR": "002",
+            "TasaOCuotaDR": "0.040000",
+            "TipoFactorDR": "Tasa"
+          }
+        },
+        "pago20:TrasladosDR": {
+          "pago20:TrasladoDR": {
+            "BaseDR": "23600.000000",
+            "ImporteDR": "3776.000000",
+            "ImpuestoDR": "002",
+            "TasaOCuotaDR": "0.160000",
+            "TipoFactorDR": "Tasa"
+          }
+        }
+      }
+    },
+    {
+      "EquivalenciaDR": "1",
+      "Folio": "18237",
+      "IdDocumento": "FE01E12C-DD2D-4877-803B-DC2C1CCDDACA",
+      "ImpPagado": "26432.00",
+      "ImpSaldoAnt": "26432.00",
+      "ImpSaldoInsoluto": "0.00",
+      "MonedaDR": "MXN",
+      "NumParcialidad": "1",
+      "ObjetoImpDR": "02",
+      "Serie": "CFCP",
+      "pago20:ImpuestosDR": {
+        "pago20:RetencionesDR": {
+          "pago20:RetencionDR": {
+            "BaseDR": "23600.000000",
+            "ImporteDR": "944.000000",
+            "ImpuestoDR": "002",
+            "TasaOCuotaDR": "0.040000",
+            "TipoFactorDR": "Tasa"
+          }
+        },
+        "pago20:TrasladosDR": {
+          "pago20:TrasladoDR": {
+            "BaseDR": "23600.000000",
+            "ImporteDR": "3776.000000",
+            "ImpuestoDR": "002",
+            "TasaOCuotaDR": "0.160000",
+            "TipoFactorDR": "Tasa"
+          }
+        }
+      }
+    },
+    {
+      "EquivalenciaDR": "1",
+      "Folio": "18238",
+      "IdDocumento": "0CBBDBE6-A2FE-4672-8DA9-182ECB998C6C",
+      "ImpPagado": "26432.00",
+      "ImpSaldoAnt": "26432.00",
+      "ImpSaldoInsoluto": "0.00",
+      "MonedaDR": "MXN",
+      "NumParcialidad": "1",
+      "ObjetoImpDR": "02",
+      "Serie": "CFCP",
+      "pago20:ImpuestosDR": {
+        "pago20:RetencionesDR": {
+          "pago20:RetencionDR": {
+            "BaseDR": "23600.000000",
+            "ImporteDR": "944.000000",
+            "ImpuestoDR": "002",
+            "TasaOCuotaDR": "0.040000",
+            "TipoFactorDR": "Tasa"
+          }
+        },
+        "pago20:TrasladosDR": {
+          "pago20:TrasladoDR": {
+            "BaseDR": "23600.000000",
+            "ImporteDR": "3776.000000",
+            "ImpuestoDR": "002",
+            "TasaOCuotaDR": "0.160000",
+            "TipoFactorDR": "Tasa"
+          }
+        }
+      }
+    },
+    {
+      "EquivalenciaDR": "1",
+      "Folio": "18239",
+      "IdDocumento": "4245E386-580F-43A5-BEB4-481E0D3A40B5",
+      "ImpPagado": "26432.00",
+      "ImpSaldoAnt": "26432.00",
+      "ImpSaldoInsoluto": "0.00",
+      "MonedaDR": "MXN",
+      "NumParcialidad": "1",
+      "ObjetoImpDR": "02",
+      "Serie": "CFCP",
+      "pago20:ImpuestosDR": {
+        "pago20:RetencionesDR": {
+          "pago20:RetencionDR": {
+            "BaseDR": "23600.000000",
+            "ImporteDR": "944.000000",
+            "ImpuestoDR": "002",
+            "TasaOCuotaDR": "0.040000",
+            "TipoFactorDR": "Tasa"
+          }
+        },
+        "pago20:TrasladosDR": {
+          "pago20:TrasladoDR": {
+            "BaseDR": "23600.000000",
+            "ImporteDR": "3776.000000",
+            "ImpuestoDR": "002",
+            "TasaOCuotaDR": "0.160000",
+            "TipoFactorDR": "Tasa"
+          }
+        }
+      }
+    }
+  ],
+  "pago20:ImpuestosP": {
+    "pago20:RetencionesP": {
+      "pago20:RetencionP": {
+        "ImporteP": "82387.200000",
+        "ImpuestoP": "002"
+      }
+    },
+    "pago20:TrasladosP": {
+      "pago20:TrasladoP": {
+        "BaseP": "2059680.000000",
+        "ImporteP": "329548.800000",
+        "ImpuestoP": "002",
+        "TasaOCuotaP": "0.160000",
+        "TipoFactorP": "Tasa"
+      }
+    }
+  }
+}
